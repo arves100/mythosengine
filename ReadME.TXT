@@ -1,40 +1,24 @@
+		 .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
+		/==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
+		|==|, \/ /, / /==/- / /=/_ /  |==|, \/ /, / \==\.-.  - ,-./ |==|_ ||=|, |  /==/_,  ,  - \  |==|, \/ /, / 
+		|==|-  \|  |  \==\, \/=/. /   |==|-  \|  |   `--`\==\- \    |==| ,|/=| _| |==|   .=.     | |==|-  \|  |  
+		|==| ,  | -|   \==\  \/ -/    |==| ,  | -|        \==\_ \   |==|- `-' _ | |==|_ : ;=:  - | |==| ,  | -|  
+		|==| -   _ |    |==|  ,_/     |==| -   _ |        |==|- |   |==|  _     | |==| , '='     | |==| -   _ |  
+		|==|  /\ , |    \==\-, /      |==|  /\ , |        |==|, |   |==|   .-. ,\  \==\ -    ,_ /  |==|  /\ , |  
+		/==/, | |- |    /==/._/       /==/, | |- |        /==/ -/   /==/, //=/  |   '.='. -   .'   /==/, | |- |  
+		`--`./  `--`    `--`-`        `--`./  `--`        `--`--`   `--`-' `-`--`     `--`--''     `--`./  `--`  
 
-                                 /\    /\
-                                /  \  /  \
-                               /    \/    \
-                              /  /\    /\  \
-                             /  /  \  /  Y T H O S
-                            /  /    \/    \  \
-                           /  /            \  \
-                          /__/              \__\
- 
-    Copyright (c) 1994-1999 by Dan Higdon, Tim Little, and Chuck Walbourn
 
-                           Windows 95/98/NT Version
+							Copyright (C) 2018 Arves100. All Rights Reserved.
 
- ---------------------------------------------------------------------------
+										 Refreshed Windows XP Version
+									   *** Development Version: 0.1 ***
 
-  THE AUTHORS MAKE NO WARRANTIES, EXPRESS OR IMPLIED, AS TO THE CORRECTNESS
-  OF THIS CODE OR ANY DERIVATIVE WORKS WHICH INCORPORATE IT.  THE AUTHORS
-  PROVIDE THE CODE ON AN "AS-IS" BASIS AND EXPLICITLY DISCLAIMS ANY
-  LIABILITY, INCLUDING CONSEQUENTIAL AND INCIDENTAL DAMAGES FOR ERRORS,
-  OMISSIONS, AND OTHER PROBLEMS IN THE CODE.
+											   31, May 2018
 
  ---------------------------------------------------------------------------
-
-                         http://www.mythos-engine.org/
-
- ---------------------------------------------------------------------------
-
-                         *** Version 1.8 Release ***
-
-			       July 8, 1999
-
- All documentation for MythOS is provided in Windows Help files.  If you 
- have need of hardcopy documentation, you can use the print option in the 
- Windows help viewer.  An HTML version of the help file should be available
- from the MythOS Home Page (http://www.mythos-engine.org/).
-
+ This software is based from MythOS 98 MIT Release. 
+ See https://github.com/walbourn/mythosengine for the original source.
  
  
  ---------------------------------------------------------------------------

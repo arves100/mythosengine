@@ -1,93 +1,20 @@
-
-                                 /\    /\
-                                /  \  /  \
-                               /    \/    \
-                              /  /\    /\  \
-                             /  /  \  /  Y T H O S
-                            /  /    \/    \  \
-                           /  /            \  \
-                          /__/              \__\
- 
-    Copyright (c) 1994-1999 by Dan Higdon, Tim Little, and Chuck Walbourn
-
-                           Windows 95/98/NT Version
-
- ---------------------------------------------------------------------------
-
-  THE AUTHORS MAKE NO WARRANTIES, EXPRESS OR IMPLIED, AS TO THE CORRECTNESS
-  OF THIS CODE OR ANY DERIVATIVE WORKS WHICH INCORPORATE IT.  THE AUTHORS
-  PROVIDE THE CODE ON AN "AS-IS" BASIS AND EXPLICITLY DISCLAIM ANY
-  LIABILITY, INCLUDING CONSEQUENTIAL AND INCIDENTAL DAMAGES FOR ERRORS,
-  OMISSIONS, AND OTHER PROBLEMS IN THE CODE.
-
- ---------------------------------------------------------------------------
-
-                            W H A T ' S   N E W
-
-                       *** Version 1.8 Release ***
-
-			       July 8, 1999
-
- ---------------------------------------------------------------------------
- LICENSE
-
- The MythOS library set is now licensed under the MIT License.
- It was previously subject to a commercial license.
+		 .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
+		/==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
+		|==|, \/ /, / /==/- / /=/_ /  |==|, \/ /, / \==\.-.  - ,-./ |==|_ ||=|, |  /==/_,  ,  - \  |==|, \/ /, / 
+		|==|-  \|  |  \==\, \/=/. /   |==|-  \|  |   `--`\==\- \    |==| ,|/=| _| |==|   .=.     | |==|-  \|  |  
+		|==| ,  | -|   \==\  \/ -/    |==| ,  | -|        \==\_ \   |==|- `-' _ | |==|_ : ;=:  - | |==| ,  | -|  
+		|==| -   _ |    |==|  ,_/     |==| -   _ |        |==|- |   |==|  _     | |==| , '='     | |==| -   _ |  
+		|==|  /\ , |    \==\-, /      |==|  /\ , |        |==|, |   |==|   .-. ,\  \==\ -    ,_ /  |==|  /\ , |  
+		/==/, | |- |    /==/._/       /==/, | |- |        /==/ -/   /==/, //=/  |   '.='. -   .'   /==/, | |- |  
+		`--`./  `--`    `--`-`        `--`./  `--`        `--`--`   `--`-' `-`--`     `--`--''     `--`./  `--`  
 
 
- ---------------------------------------------------------------------------
- 3D HARDWARE
+							Copyright (C) 2018 Arves100. All Rights Reserved.
 
- AMD-3D Technology enhancements added to the Escher math library.
+										 Refreshed Windows XP Version
+									   *** Development Version: 0.1 ***
 
+											W H A T ' S   N E W
 
- ---------------------------------------------------------------------------
- BACH
-
- Added 3D sound interfaces, a CD audio control class, and a MIDI player
- implementation using DirectMusic that comes with DirectX SDK V6.1.
-
-
- ---------------------------------------------------------------------------
- ESCHER
-
- Various minor fixes to Escher including hither/yon clipping problems,
- gradient camera backgrounds, and a new EschPlaneDraw drawable class.  Also
- added a "Merge Verticies" option to the Escher 3DS R4 Exporter.
-
-
- ---------------------------------------------------------------------------
- HELP
-
- The source files for the Programmer's and User's Guides are included in
- this release.  To build the HLP file, run the 'make.bat' batch file in the
- Source\Help directory (you will have to edit the batch file for the
- proper location of the Help Compiler on your system).
-
-
- ---------------------------------------------------------------------------
- PANE
-
- This release includes the preliminary Pane library that was never formerly
- released.  It was used for internal projects at Charybdis Enterprises.
- 
-
- ---------------------------------------------------------------------------
- SIMGINE
-
- Various minor fixes to SimGine and more work done on the Audio manager
- classes to take advantage of the new functions in Bach.
-
-
- ---------------------------------------------------------------------------
- TURNER
-
- Updated for DirectPlay4A interface that comes with DirectX SDK V6.1.
-
-
- ---------------------------------------------------------------------------
- XFILE
-
- Added 15-bit per/pixel support for the .BMP file format.
 
 END OF DOCUMENT
