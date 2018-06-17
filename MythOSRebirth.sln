@@ -33,6 +33,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XFile", "Source\XFile\XFile
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IvoryMFC", "Source\Ivory\IvoryMFC\IvoryMFC.vcproj", "{91CF3F1B-E899-407E-A0A4-F5C94216A1FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{22EAA7E1-DD9D-4311-B295-06293ED2CD87}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FelixTest", "Source\Felix\Test\FelixTest.vcproj", "{3C5C9906-9E46-4208-AFC9-753447D47AD0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IvoryTest", "Source\Ivory\Test\IvoryTest.vcproj", "{2F6B18B9-0F87-4201-A6AC-13BCF017C654}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -103,8 +109,20 @@ Global
 		{91CF3F1B-E899-407E-A0A4-F5C94216A1FA}.Debug|Win32.Build.0 = Debug|Win32
 		{91CF3F1B-E899-407E-A0A4-F5C94216A1FA}.Release|Win32.ActiveCfg = Release|Win32
 		{91CF3F1B-E899-407E-A0A4-F5C94216A1FA}.Release|Win32.Build.0 = Release|Win32
+		{3C5C9906-9E46-4208-AFC9-753447D47AD0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3C5C9906-9E46-4208-AFC9-753447D47AD0}.Debug|Win32.Build.0 = Debug|Win32
+		{3C5C9906-9E46-4208-AFC9-753447D47AD0}.Release|Win32.ActiveCfg = Release|Win32
+		{3C5C9906-9E46-4208-AFC9-753447D47AD0}.Release|Win32.Build.0 = Release|Win32
+		{2F6B18B9-0F87-4201-A6AC-13BCF017C654}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F6B18B9-0F87-4201-A6AC-13BCF017C654}.Debug|Win32.Build.0 = Debug|Win32
+		{2F6B18B9-0F87-4201-A6AC-13BCF017C654}.Release|Win32.ActiveCfg = Release|Win32
+		{2F6B18B9-0F87-4201-A6AC-13BCF017C654}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C5C9906-9E46-4208-AFC9-753447D47AD0} = {22EAA7E1-DD9D-4311-B295-06293ED2CD87}
+		{2F6B18B9-0F87-4201-A6AC-13BCF017C654} = {22EAA7E1-DD9D-4311-B295-06293ED2CD87}
 	EndGlobalSection
 EndGlobal
