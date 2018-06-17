@@ -9,9 +9,10 @@
 		`--`./  `--`    `--`-`        `--`./  `--`        `--`--`   `--`-' `-`--`     `--`--''     `--`./  `--`  
 
 
+										MythOS Rebirth/Nynthon Engine
 							Copyright (C) 2018 Arves100. All Rights Reserved.
 
-										 Refreshed Windows XP Version
+										 Refreshed Windows Version
 									   *** Development Version: 0.1 ***
 
 											   31, May 2018
