@@ -7,8 +7,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bach", "Source\Bach\Bach.vc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bozo", "Source\Bozo\Bozo.vcproj", "{25C60D69-DD02-4E59-85AF-C155A9B1E489}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chronos", "Source\Chronos\Chronos.vcproj", "{2931F464-DE0F-4D6B-AFDB-E764FA97D5EE}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Escher", "Source\Escher\Escher.vcproj", "{5521F7FC-2818-4275-9AD6-1448A8A6C716}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Felix", "Source\Felix\Felix.vcproj", "{7479EDBC-C102-46AF-83FA-12D7DF15BEBD}"
@@ -67,6 +65,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XFileTest", "Source\XFile\T
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gutenbrg", "Source\Gutenbrg\Gutenbrg.vcproj", "{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chronos", "Source\Chronos\Chronos.vcproj", "{FE1446A3-3053-4FD7-B830-8338604FA72D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -85,10 +85,6 @@ Global
 		{25C60D69-DD02-4E59-85AF-C155A9B1E489}.Debug|Win32.Build.0 = Debug|Win32
 		{25C60D69-DD02-4E59-85AF-C155A9B1E489}.Release|Win32.ActiveCfg = Release|Win32
 		{25C60D69-DD02-4E59-85AF-C155A9B1E489}.Release|Win32.Build.0 = Release|Win32
-		{2931F464-DE0F-4D6B-AFDB-E764FA97D5EE}.Debug|Win32.ActiveCfg = Debug|Win32
-		{2931F464-DE0F-4D6B-AFDB-E764FA97D5EE}.Debug|Win32.Build.0 = Debug|Win32
-		{2931F464-DE0F-4D6B-AFDB-E764FA97D5EE}.Release|Win32.ActiveCfg = Release|Win32
-		{2931F464-DE0F-4D6B-AFDB-E764FA97D5EE}.Release|Win32.Build.0 = Release|Win32
 		{5521F7FC-2818-4275-9AD6-1448A8A6C716}.Debug|Win32.ActiveCfg = Debug|Win32
 		{5521F7FC-2818-4275-9AD6-1448A8A6C716}.Debug|Win32.Build.0 = Debug|Win32
 		{5521F7FC-2818-4275-9AD6-1448A8A6C716}.Release|Win32.ActiveCfg = Release|Win32
@@ -201,6 +197,10 @@ Global
 		{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}.Debug|Win32.Build.0 = Debug|Win32
 		{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}.Release|Win32.ActiveCfg = Release|Win32
 		{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}.Release|Win32.Build.0 = Release|Win32
+		{FE1446A3-3053-4FD7-B830-8338604FA72D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FE1446A3-3053-4FD7-B830-8338604FA72D}.Debug|Win32.Build.0 = Debug|Win32
+		{FE1446A3-3053-4FD7-B830-8338604FA72D}.Release|Win32.ActiveCfg = Release|Win32
+		{FE1446A3-3053-4FD7-B830-8338604FA72D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

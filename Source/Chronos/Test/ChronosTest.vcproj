@@ -58,6 +58,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -127,6 +128,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -156,6 +158,10 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{FE1446A3-3053-4FD7-B830-8338604FA72D}"
+			RelativePathToProject=".\Source\Chronos\Chronos.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

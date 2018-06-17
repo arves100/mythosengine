@@ -156,6 +156,10 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{5521F7FC-2818-4275-9AD6-1448A8A6C716}"
+			RelativePathToProject=".\Source\Escher\Escher.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

@@ -156,6 +156,10 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{4A1F0224-2D5C-4825-B07B-7395454ADF4E}"
+			RelativePathToProject=".\Source\Newton\Newton.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

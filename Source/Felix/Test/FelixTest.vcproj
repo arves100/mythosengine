@@ -156,6 +156,10 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{7479EDBC-C102-46AF-83FA-12D7DF15BEBD}"
+			RelativePathToProject=".\Source\Felix\Felix.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

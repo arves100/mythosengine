@@ -156,6 +156,10 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
+			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

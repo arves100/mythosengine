@@ -13,6 +13,9 @@
 		/>
 	</Platforms>
 	<ToolFiles>
+		<DefaultToolFile
+			FileName="masm.rules"
+		/>
 	</ToolFiles>
 	<Configurations>
 		<Configuration
@@ -27,6 +30,10 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="MASM"
+				IncludePaths="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -88,6 +95,10 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="MASM"
+				IncludePaths="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -152,6 +163,20 @@
 			<File
 				RelativePath=".\BZJUMP.ASM"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\BZQUEUE.C"

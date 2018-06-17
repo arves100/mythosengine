@@ -16,5 +16,7 @@
 
 											W H A T ' S   N E W
 
+Development Version 0.1:
+	[+] Switched to Visual Studio 2008
 
 END OF DOCUMENT

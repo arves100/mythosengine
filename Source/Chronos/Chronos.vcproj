@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="Chronos"
-	ProjectGUID="{2931F464-DE0F-4D6B-AFDB-E764FA97D5EE}"
+	ProjectGUID="{FE1446A3-3053-4FD7-B830-8338604FA72D}"
 	RootNamespace="Chronos"
 	TargetFrameworkVersion="196613"
 	>
@@ -13,6 +13,9 @@
 		/>
 	</Platforms>
 	<ToolFiles>
+		<DefaultToolFile
+			FileName="masm.rules"
+		/>
 	</ToolFiles>
 	<Configurations>
 		<Configuration
@@ -27,6 +30,10 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="MASM"
+				IncludePaths="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -88,6 +95,10 @@
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="MASM"
+				IncludePaths="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -152,6 +163,20 @@
 			<File
 				RelativePath=".\CHRRDTSC.ASM"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 		</Filter>
 		<Filter

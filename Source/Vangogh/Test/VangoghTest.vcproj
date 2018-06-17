@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -58,6 +58,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib ddraw.lib"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -110,7 +112,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -127,6 +129,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib ddraw.lib"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -156,6 +160,34 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{6BFB5819-7D0D-4BC8-BF1F-24AB5FD72DBB}"
+			RelativePathToProject=".\Source\XFile\XFile.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{5BB8BEE7-A6AE-4C8E-9762-2B81021925D3}"
+			RelativePathToProject=".\Source\Vangogh\Vangogh.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
+			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}"
+			RelativePathToProject=".\Source\Gutenbrg\Gutenbrg.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{FE1446A3-3053-4FD7-B830-8338604FA72D}"
+			RelativePathToProject=".\Source\Chronos\Chronos.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{60224C89-C537-4BE1-B2C4-5AE188C4BA8C}"
+			RelativePathToProject=".\Source\Max\Max.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{7479EDBC-C102-46AF-83FA-12D7DF15BEBD}"
+			RelativePathToProject=".\Source\Felix\Felix.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

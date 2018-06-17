@@ -33,6 +33,7 @@
 			/>
 			<Tool
 				Name="MASM"
+				IncludePaths="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"
@@ -97,6 +98,7 @@
 			/>
 			<Tool
 				Name="MASM"
+				IncludePaths="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCXMLDataGeneratorTool"

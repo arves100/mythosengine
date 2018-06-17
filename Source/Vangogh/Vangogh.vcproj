@@ -13,6 +13,9 @@
 		/>
 	</Platforms>
 	<ToolFiles>
+		<DefaultToolFile
+			FileName="masm.rules"
+		/>
 	</ToolFiles>
 	<Configurations>
 		<Configuration
@@ -29,6 +32,10 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
+				Name="MASM"
+				IncludePaths="$(SolutionDir)Inc"
+			/>
+			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -40,7 +47,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -90,6 +97,10 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
+				Name="MASM"
+				IncludePaths="$(SolutionDir)Inc"
+			/>
+			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -102,7 +113,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -146,6 +157,232 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\8BPP\AGTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\ALGTT8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\altt8.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\APGTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\APTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\ATRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\AZGTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\AZLGTT8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\AZLTT8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\AZPGTTR8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\AZPTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\AZTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Screen\D3DSCRN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Boards\D3DTEX.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Screen\DDRWSCRN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Screen\DIBSCRN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\GRTRI16.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\GRTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\GTRI16.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\GTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\HLGEN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Screen\HYBRSCRN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\LGTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\LTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\NZGTRI8.ASM"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\8BPP\PGTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\PTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TAHLGEN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TATHLGEN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH128128.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH128256.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH12832.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH12864.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH256128.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH256256.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH25632.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH25664.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH32128.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH32256.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH3232.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH3264.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH64128.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH64256.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH6432.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\TH6464.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\THLGEN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\TRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\VGGRTR16.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\VGITRN16.ASM"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\VGPOLY16.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\VGRECT16.ASM"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\VGVPDB16.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\VGVPDD16.CPP"
+				>
+			</File>
+			<File
 				RelativePath=".\VNGCIRCL.CPP"
 				>
 			</File>
@@ -158,6 +395,14 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Boards\VNGD3D.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\VNGEDGE.ASM"
+				>
+			</File>
+			<File
 				RelativePath=".\vnggen.cpp"
 				>
 			</File>
@@ -166,12 +411,42 @@
 				>
 			</File>
 			<File
-				RelativePath=".\VNGITRNS.ASM"
+				RelativePath=".\8BPP\VNGGRTR8.CPP"
 				>
 			</File>
 			<File
-				RelativePath=".\VNGLINE.ASM"
+				RelativePath=".\8BPP\VNGGTRI8.CPP"
 				>
+			</File>
+			<File
+				RelativePath=".\16BPP\VNGITN16.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\VNGITNS8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\vngitrn8.asm"
+				>
+			</File>
+			<File
+				RelativePath=".\VNGITRNS.ASM"
+				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\VNGPAL.CPP"
@@ -180,9 +455,51 @@
 			<File
 				RelativePath=".\VNGPCALC.ASM"
 				>
+				<FileConfiguration
+					Name="Debug|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\VNGPCH.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\vngpix8.asm"
+				>
+			</File>
+			<File
+				RelativePath=".\NewTri\VNGPOLY.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\VNGPOLY8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\vngptr16.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\VNGPTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\vngrect8.asm"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\VNGSBLT8.CPP"
 				>
 			</File>
 			<File
@@ -194,7 +511,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\16BPP\vngtri16.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\VNGTRI8.CPP"
+				>
+			</File>
+			<File
 				RelativePath=".\VNGTSET.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\vngttri8.cpp"
 				>
 			</File>
 			<File
@@ -206,11 +535,63 @@
 				>
 			</File>
 			<File
+				RelativePath=".\8BPP\VNGVPDB8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\VNGVPDD8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\VNGVVP16.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\vngvvp8.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\VNGZMAP.CPP"
 				>
 			</File>
 			<File
 				RelativePath=".\vngzrect.asm"
+				>
+			</File>
+			<File
+				RelativePath=".\16BPP\ZGRTRI16.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\ZGRTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\zgtri8.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\zlgttri8.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\ZLTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\zpghlin8.asm"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\ZPGTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\ZPTTRI8.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\8BPP\ZTRI8.CPP"
 				>
 			</File>
 		</Filter>

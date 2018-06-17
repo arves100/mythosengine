@@ -156,6 +156,14 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{6BFB5819-7D0D-4BC8-BF1F-24AB5FD72DBB}"
+			RelativePathToProject=".\Source\XFile\XFile.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
+			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

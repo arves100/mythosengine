@@ -156,6 +156,14 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{25C60D69-DD02-4E59-85AF-C155A9B1E489}"
+			RelativePathToProject=".\Source\Bozo\Bozo.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
+			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

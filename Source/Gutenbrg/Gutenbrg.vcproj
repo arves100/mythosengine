@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -102,7 +102,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/incude&quot;;&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"

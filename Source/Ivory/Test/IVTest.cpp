@@ -92,7 +92,7 @@ struct MyClass
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 void main ()
 {
-    const       swap_space = 1024 * 1024;
+    const int   swap_space = 1024 * 1024;
     void        *ptrs[100]; // A very handy little local
     int         i;
     IvoryHandle h[100];
@@ -337,7 +337,7 @@ void main ()
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
 extern "C" void _charybdis_assert(char *msg, char *exp, char *f, unsigned ln)
 {
-    static loop_check = 0;
+    static int loop_check = 0;
 
     if (!loop_check)
     {

@@ -150,6 +150,22 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Bitmap\xfbitmap.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Bitmap\xfbmp.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Bitmap\xfbparse.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Bitmap\xfcel.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\xfdisk.cpp"
 				>
 			</File>
@@ -158,7 +174,83 @@
 				>
 			</File>
 			<File
+				RelativePath=".\IFF\xfifchnk.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\IFF\xfiff.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\IFF\xfifform.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\INI\xfini.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfiobase.c"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfiodir.c"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfioenv.c"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfioerr.c"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfiofind.c"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfiofinf.c"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfiofmsc.c"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfiogfre.c"
+				>
+			</File>
+			<File
+				RelativePath=".\IO\xfiopath.c"
+				>
+			</File>
+			<File
+				RelativePath=".\INI\xfiread.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\INI\xfiwrite.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Bitmap\xflbm.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Bitmap\xfpcx.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\XFRAM.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Bitmap\xftga.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Bitmap\xfxeb.cpp"
 				>
 			</File>
 		</Filter>
