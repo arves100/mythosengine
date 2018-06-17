@@ -40,6 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -101,6 +102,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -143,6 +145,38 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\ESCAMERA.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\ESCAMEX.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\ESDATA.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\ESEXTBOX.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\ESEXTSPH.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\ESPCH.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\ESSCENE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\ESSYSTEM.CPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -155,7 +189,27 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\ESLIGHT.BMP"
+				>
+			</File>
+			<File
+				RelativePath=".\ESMTL.BMP"
+				>
+			</File>
+			<File
+				RelativePath=".\Esport.bmp"
+				>
+			</File>
 		</Filter>
+		<File
+			RelativePath=".\ESCHER.RTF"
+			>
+		</File>
+		<File
+			RelativePath=".\ReadME.TXT"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

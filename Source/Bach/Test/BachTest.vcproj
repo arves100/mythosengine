@@ -161,6 +161,10 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\BACHTEST.CPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -173,6 +177,42 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\BIGCITY.MID"
+				>
+			</File>
+			<File
+				RelativePath=".\charybds.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\CHIMES.WAV"
+				>
+			</File>
+			<File
+				RelativePath=".\GALACTIC.MID"
+				>
+			</File>
+			<File
+				RelativePath=".\niceshot.wav"
+				>
+			</File>
+			<File
+				RelativePath=".\RESOURCE.RC"
+				>
+			</File>
+			<File
+				RelativePath=".\SHERWOOD.MID"
+				>
+			</File>
+			<File
+				RelativePath=".\TADA.WAV"
+				>
+			</File>
+			<File
+				RelativePath=".\TEST.RAW"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>

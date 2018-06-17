@@ -40,6 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -101,6 +102,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -143,6 +145,94 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\SIMASSRT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMAUDIO.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMBASE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMEQUIP.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMGINE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMOBJ.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMOFLD.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMPCH.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMPROC.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMSCRN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMSD3D.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMSDD.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMSDIB.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMSTART.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMSTATE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMTEMP.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMTEXT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMTTABL.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMUI.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMULATR.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMUNIT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\SIMVIEW.CPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -156,6 +246,14 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 		</Filter>
+		<File
+			RelativePath=".\ReadME.TXT"
+			>
+		</File>
+		<File
+			RelativePath=".\simgine.rtf"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

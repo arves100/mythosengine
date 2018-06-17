@@ -161,18 +161,90 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\GSTATE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\INIT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MAIN.CPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\GFRAME.HPP"
+				>
+			</File>
+			<File
+				RelativePath=".\GLOBAL.HPP"
+				>
+			</File>
+			<File
+				RelativePath=".\RESOURCE.H"
+				>
+			</File>
+			<File
+				RelativePath=".\TEST.HPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\12x12.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\12x24.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\5x8.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\8x13.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\9x15.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\charybds.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\DEFAULT.PAL"
+				>
+			</File>
+			<File
+				RelativePath=".\GFRAME.CEL"
+				>
+			</File>
+			<File
+				RelativePath=".\gframe.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\RESOURCE.RC"
+				>
+			</File>
+			<File
+				RelativePath=".\test.iff"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>

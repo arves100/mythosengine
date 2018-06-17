@@ -40,6 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -101,6 +102,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -143,6 +145,58 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\bachcd.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\bachd3d.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BACHDIGI.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\bachmus.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\bachpch.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\bachs3d.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Bachsamp.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\bachseq.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BACHSFIL.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\BACHSRAW.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\bachsseq.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\bachssmp.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BACHSWAV.CPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -156,6 +210,14 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 		</Filter>
+		<File
+			RelativePath=".\bach.rtf"
+			>
+		</File>
+		<File
+			RelativePath=".\ReadME.TXT"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

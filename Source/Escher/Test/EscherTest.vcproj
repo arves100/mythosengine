@@ -161,18 +161,146 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\et.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\INIT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MAIN.CPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\etevt.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GLOBAL.HPP"
+				>
+			</File>
+			<File
+				RelativePath=".\RESOURCE.H"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\8X13.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\BOXTEST.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\charybds.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\CHOPPER.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\CHRTEST.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\CUBE.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\CUBEANM.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\default.pal"
+				>
+			</File>
+			<File
+				RelativePath=".\ET.INI"
+				>
+			</File>
+			<File
+				RelativePath=".\etevt.cel"
+				>
+			</File>
+			<File
+				RelativePath=".\etevt.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\EXPORT.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\EXPORT2.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\FLAME.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\KEYS.CIF"
+				>
+			</File>
+			<File
+				RelativePath=".\KEYS.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\RESOURCE.RC"
+				>
+			</File>
+			<File
+				RelativePath=".\SABKEYS.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\SOLDUSAH.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\TEAPOT4K.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\TOKENS.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\TREES.BMP"
+				>
+			</File>
+			<File
+				RelativePath=".\TREETOPS.BMP"
+				>
+			</File>
+			<File
+				RelativePath=".\TREETRAN.BMP"
+				>
+			</File>
+			<File
+				RelativePath=".\UNDRBRSH.BMP"
+				>
+			</File>
+			<File
+				RelativePath=".\VENUS.IFF"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>

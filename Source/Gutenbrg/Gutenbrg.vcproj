@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="IvoryTest"
-	ProjectGUID="{2F6B18B9-0F87-4201-A6AC-13BCF017C654}"
-	RootNamespace="IvoryTest"
+	Name="Gutenbrg"
+	ProjectGUID="{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}"
+	RootNamespace="Gutenbrg"
 	TargetFrameworkVersion="196613"
 	>
 	<Platforms>
@@ -40,6 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -109,6 +110,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -162,7 +164,39 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\IVTest.cpp"
+				RelativePath=".\GBRGFONT.C"
+				>
+			</File>
+			<File
+				RelativePath=".\GBRGIFNT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\GBRGISTR.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\GBRGOUTC.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\GBRGSTR.C"
+				>
+			</File>
+			<File
+				RelativePath=".\GBRGTEXT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\GBRGXFNT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\GBRGXSTR.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\GUTENBRG.C"
 				>
 			</File>
 		</Filter>
@@ -177,15 +211,15 @@
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
-			<File
-				RelativePath=".\charybds.ico"
-				>
-			</File>
-			<File
-				RelativePath=".\RESOURCE.RC"
-				>
-			</File>
 		</Filter>
+		<File
+			RelativePath=".\Gutenbrg.RTF"
+			>
+		</File>
+		<File
+			RelativePath=".\readme.txt"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

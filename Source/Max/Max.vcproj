@@ -40,6 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -101,6 +102,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -143,6 +145,38 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\MaxDevs.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MaxESrc.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MaxETsk.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MaxEvt.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MAXJOY.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MAXKB.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MAXMOUSE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MAXVMAP.CPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -156,6 +190,14 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 		</Filter>
+		<File
+			RelativePath=".\max.rtf"
+			>
+		</File>
+		<File
+			RelativePath=".\ReadMe.TXT"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

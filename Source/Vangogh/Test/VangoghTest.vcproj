@@ -161,18 +161,102 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\GSTATE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\INIT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\MAIN.CPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\gframe.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GLOBAL.HPP"
+				>
+			</File>
+			<File
+				RelativePath=".\RESOURCE.H"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
 			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
+			<File
+				RelativePath=".\8X13.IFF"
+				>
+			</File>
+			<File
+				RelativePath=".\charybds.ico"
+				>
+			</File>
+			<File
+				RelativePath=".\default.pal"
+				>
+			</File>
+			<File
+				RelativePath=".\GFRAME.CEL"
+				>
+			</File>
+			<File
+				RelativePath=".\gframe.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\new.vgp"
+				>
+			</File>
+			<File
+				RelativePath=".\new2.VGP"
+				>
+			</File>
+			<File
+				RelativePath=".\odefault.pal"
+				>
+			</File>
+			<File
+				RelativePath=".\PATTERN.BMP"
+				>
+			</File>
+			<File
+				RelativePath=".\resource.rc"
+				>
+			</File>
+			<File
+				RelativePath=".\samp1.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\samp2.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\samp3.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\samp4.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\VT.INI"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>

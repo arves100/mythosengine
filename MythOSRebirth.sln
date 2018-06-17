@@ -65,6 +65,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VangoghTest", "Source\Vango
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XFileTest", "Source\XFile\Test\XFileTest.vcproj", "{460964BD-5B32-43F9-8BD5-DE886B33A04E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gutenbrg", "Source\Gutenbrg\Gutenbrg.vcproj", "{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -195,6 +197,10 @@ Global
 		{460964BD-5B32-43F9-8BD5-DE886B33A04E}.Debug|Win32.Build.0 = Debug|Win32
 		{460964BD-5B32-43F9-8BD5-DE886B33A04E}.Release|Win32.ActiveCfg = Release|Win32
 		{460964BD-5B32-43F9-8BD5-DE886B33A04E}.Release|Win32.Build.0 = Release|Win32
+		{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}.Debug|Win32.Build.0 = Debug|Win32
+		{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}.Release|Win32.ActiveCfg = Release|Win32
+		{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
