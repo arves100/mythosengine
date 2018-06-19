@@ -18,7 +18,7 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)Bin"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -77,8 +77,8 @@
 				Name="VCLinkerTool"
 				AdditionalOptions="/VERSION:4,0"
 				AdditionalDependencies="winmm.lib"
-				OutputFile="$(OutDir)\$(ProjectName).exe"
-				Version="4"
+				OutputFile="$(OutDir)\$(ProjectName)d.exe"
+				Version=""
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=""
@@ -116,7 +116,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="$(SolutionDir)Bin"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
@@ -177,7 +177,7 @@
 				AdditionalOptions="/VERSION:4,0"
 				AdditionalDependencies="winmm.lib"
 				OutputFile="$(OutDir)\$(ProjectName).exe"
-				Version="4"
+				Version=""
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories=""
