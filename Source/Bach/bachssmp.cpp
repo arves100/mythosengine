@@ -43,6 +43,9 @@
 
 #include "bach.hpp"
 
+#define DSBCAPS_CTRLDEFAULT DSBCAPS_CTRLPAN|DSBCAPS_CTRLVOLUME|DSBCAPS_CTRLFREQUENCY
+#define DSBCAPS_CTRLALL DSBCAPS_CTRL3D|DSBCAPS_CTRLDEFAULT|DSBCAPS_CTRLPOSITIONNOTIFY 
+
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 //
 //                                 Code

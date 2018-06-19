@@ -162,6 +162,10 @@
 			ReferencedProjectIdentifier="{FE1446A3-3053-4FD7-B830-8338604FA72D}"
 			RelativePathToProject=".\Source\Chronos\Chronos.vcproj"
 		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}"
+			RelativePathToProject=".\Source\Gutenbrg\Gutenbrg.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

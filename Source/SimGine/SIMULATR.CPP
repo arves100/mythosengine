@@ -224,10 +224,11 @@ void SimulatorState::process_events ()
 
         if (timebase > 0)
         {
+			int i = 0;
             time_now = ulong(timebase * 1000.0f);
 
             //ÄÄÄ Step model
-            for(int i=0; i < obj_hi; i++)
+            for(i=0; i < obj_hi; i++)
             {
                 SimObject *ptr = objects[i];
                 if (ptr && !(ptr->base_flags & SimObject::BASE_INACTIVE))

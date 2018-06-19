@@ -89,7 +89,7 @@ STATIC void warning(char *str);
 extern "C" long    YY_integer;
 extern "C" int     YY_lineno;
 extern "C" char    *yytext;
-extern "C" int     YY_hexmode;
+//extern "C" int     YY_hexmode;
 
 //ÄÄ External from main module.
 extern XFParseIFF  IFF;
@@ -329,7 +329,7 @@ void compile(char *name)
                 if (CurrentToken != YY_BITMAP)
                     error("BITMAP for character not found");
 
-                YY_hexmode=1;
+                //YY_hexmode=1;
 
                 match(YY_BITMAP);
 
@@ -386,7 +386,7 @@ void compile(char *name)
                     match(YY_INTEGER);
                 }
 
-                YY_hexmode=0;
+                //YY_hexmode=0;
             }
 
             while(CurrentToken)

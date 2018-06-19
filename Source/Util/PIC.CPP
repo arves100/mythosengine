@@ -123,6 +123,8 @@ char Util_name[] = "°± MythOS Pic Image Utility - (C) 1994-1999 by D. Higdon, T.
 
 
 
+extern "C" int YY_lineno;
+
 IvorySystem     Ivory;
 
 dword           Flags=0;
@@ -1169,6 +1171,16 @@ extern "C" void _charybdis_assert(char *msg, char *exp, char *f, unsigned ln)
         printf("Comment:\n%s\n",msg);
     }
 
+    exit(1);
+}
+//ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+// error                                                                    ³
+//                                                                          ³
+// Emits an error and aborts processing.                                    ³
+//ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+STATIC void error(char *str)
+{
+    cout << " Error(" << YY_lineno << "): " << str << "\n";
     exit(1);
 }
 

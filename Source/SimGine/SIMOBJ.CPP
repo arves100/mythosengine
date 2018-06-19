@@ -105,8 +105,10 @@ BOOL SimObject::insert(ushort t)
 
     team = t;
 
+	int i = 0;
+
 //ÄÄÄ Find empty slot
-    for (int i=0; i < parent->obj_max; i++)
+    for (i=0; i < parent->obj_max; i++)
     {
         if (!parent->objects[i])
             break;

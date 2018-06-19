@@ -1,21 +1,21 @@
-		 .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
-		/==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
-		|==|, \/ /, / /==/- / /=/_ /  |==|, \/ /, / \==\.-.  - ,-./ |==|_ ||=|, |  /==/_,  ,  - \  |==|, \/ /, / 
-		|==|-  \|  |  \==\, \/=/. /   |==|-  \|  |   `--`\==\- \    |==| ,|/=| _| |==|   .=.     | |==|-  \|  |  
-		|==| ,  | -|   \==\  \/ -/    |==| ,  | -|        \==\_ \   |==|- `-' _ | |==|_ : ;=:  - | |==| ,  | -|  
-		|==| -   _ |    |==|  ,_/     |==| -   _ |        |==|- |   |==|  _     | |==| , '='     | |==| -   _ |  
-		|==|  /\ , |    \==\-, /      |==|  /\ , |        |==|, |   |==|   .-. ,\  \==\ -    ,_ /  |==|  /\ , |  
-		/==/, | |- |    /==/._/       /==/, | |- |        /==/ -/   /==/, //=/  |   '.='. -   .'   /==/, | |- |  
-		`--`./  `--`    `--`-`        `--`./  `--`        `--`--`   `--`-' `-`--`     `--`--''     `--`./  `--`  
+ .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
+/==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
+|==|, \/ /, / /==/- / /=/_ /  |==|, \/ /, / \==\.-.  - ,-./ |==|_ ||=|, |  /==/_,  ,  - \  |==|, \/ /, / 
+|==|-  \|  |  \==\, \/=/. /   |==|-  \|  |   `--`\==\- \    |==| ,|/=| _| |==|   .=.     | |==|-  \|  |  
+|==| ,  | -|   \==\  \/ -/    |==| ,  | -|        \==\_ \   |==|- `-' _ | |==|_ : ;=:  - | |==| ,  | -|  
+|==| -   _ |    |==|  ,_/     |==| -   _ |        |==|- |   |==|  _     | |==| , '='     | |==| -   _ |  
+|==|  /\ , |    \==\-, /      |==|  /\ , |        |==|, |   |==|   .-. ,\  \==\ -    ,_ /  |==|  /\ , |  
+/==/, | |- |    /==/._/       /==/, | |- |        /==/ -/   /==/, //=/  |   '.='. -   .'   /==/, | |- |  
+`--`./  `--`    `--`-`        `--`./  `--`        `--`--`   `--`-' `-`--`     `--`--''     `--`./  `--`  
 
 
-										MythOS Rebirth/Nynthon Engine
-							Copyright (C) 2018 Arves100. All Rights Reserved.
+								MythOS Rebirth/Nynthon Engine
+					Copyright (C) 2018 Arves100. All Rights Reserved.
 
-										 Refreshed Windows Version
-									   *** Development Version: 0.1 ***
+								 Refreshed Windows Version
+							   *** Development Version: 0.1 ***
 
-											   31, May 2018
+									   31, May 2018
 
  ---------------------------------------------------------------------------
  This software is based from MythOS 98 MIT Release. 
@@ -28,38 +28,25 @@
  Select Start/Run... and select 'setup.exe'.  Follow the instructions
  given in the setup program.
 
- To build the code, you will need some supporting Microsoft SDKs in
- addition to the Visual C++ v6 compiler and MASM 6.14 (a patch from
- MASM 6.11 is provided in ML614.EXE from Microsoft's FTP site
- ftp://ftp.microsoft.com/Softlib/MSLFILES/ML614.EXE):
+ To build the code, you will need Windows 98 Platform SDK (1998) or,
+ at your option, any later SDK that supports DirectX 6 or later.
 
-    DirectX V6.1 SDK
-
-    DirectX Media V6 SDK
-
-    Microsoft September 1998 Platform SDK
-
- -or-
-
-    Microsoft June 1999 Platform SDK (includes DX V6.1, DXM V6)
-
- Be sure that your INCLUDE and LIB environment variables put the DX and DXM
- SDK first (if present), the Platform SDK next, and the Visual C++
- directories last.  If you are using the libraries from within the MSDEV
- environment, you will need to edit the variables under the Tools/Options...
- menu.
-
- Note: The Platform SDK can be downloaded from Microsoft's site at
-       http://msdn.microsoft.com/
-
-
+ ---------------------------------------------------------------------------
+ SETUP
+ 
+ Define any _WIN32_WINNT version major or greater than Windows 98 to enable
+ extensive support for that platform. (Source officially uses Windows XP
+ (0x501) target)
+ 
+ You can enable deprectad support for DirectX 6 by editing the macro
+ DIRECTX_TARGET_VERSION in "Platform.h" header
 
  ---------------------------------------------------------------------------
  DIRECTORIES
 
  The following structure will be placed onto the destination drive:
 
- \MythOS95
+ \
  +--Inc                             Includes
  |
  +--Bin                             Utility programs
@@ -214,7 +201,7 @@
     |  |
     |  +--Obj
     |
-    +--SimGine                      SimGine Framework
+    +--SimGine                      SimGine Framework (Simulation framework)
     |  +--Inc
     |  |
     |  +--Obj
@@ -232,7 +219,7 @@
     |  +--Test
     |     +--Obj
     |
-    +--System                       MythOS System
+    +--System                       NynthonEngine System
     |  +--Inc
     |  |
     |  +--Obj
@@ -245,7 +232,7 @@
     |  |
     |  +--Obj
     |
-    +--Util                         MythOS General Utilities
+    +--Util                         NynthonEngine General Utilities
     |  +--Obj
     |
     +--VanGogh                      Van Gogh (2D Graphics System)
@@ -285,12 +272,8 @@
        +--Util
           +--Obj
 
-    A master build.bat is included build all libraries and release them
-    to the Lib and Inc directories.
-
-    If you select a destination other than \MythOS95, you will need to
-    set the environment variable MYTH95ROOT equal to the path of the
-    target tree.  This variable is used by the makefiles.
+    A master solution (MythOSRebirth.sln) for Visual Studio 2008 is provided
+	for building the engine.
     
 
  
@@ -303,20 +286,13 @@
     README.TXT's are in each of the library component directories with
     current status and work notes.
 
-    This version of MythOS was built with Microsoft Visual C++ v6.0.
+    This version of NynthonEngine was built with Microsoft Visual C++ v9.0.
+	 (Microsoft Visual Studio 2008) with DirectX 7 SDK
 
-    The .libs have been built with the three run-time library choices for
-    Visual C++.  The multi-threaded libraries were built with /MT, the
-    single-threaded libraries with /ML, and the multi-threaded DLL
-    libraries with /MD.  The ASSERT.NMT and NMT directories from the
-    last release were renamed to ASSERT.ML and ML to match the compiler
-    switch.
+    The engine allows building with dynamic/static linking of MSVC at your
+	option (/MT or /MD). See configurations for more information.
 
-    Note: The Escher Exporter must be built using Watcom v10 and the 
-          Autodesk IPAS4 Toolkit, since it is a 3D Studio Plug-In module.
-          It also uses the Autodesk Animation Support Libraries R2.0.
-
-    MFC Version 6.x support DLLs are installed as part of the MythOS
+    MFC Version 6.x support DLLs are installed as part of the NynthonEngine
     installation procedure since they are required by the MFC-based tools.
 
     Several of the utilities require a PD utility, Flex, which must be 
@@ -366,59 +342,30 @@
  BUILDING CODE
 
     The majority of the code has been setup to build and run from the
-    command line using Microsoft's NMAKE utility.  There are 'mk.bat'
-    batch files in each directory that build the local files.  The
-    examples and testers include run batches which keep the current
-    directory with the supporting data files.
+    Visual Studio program.
+	
+	Platforms:
+		WIN32			Windows NT platforms with a x86 compatible processor.
+			
+	Configurations:
+		MTDEBUG			Debug configuration with no optimization, used for developing and
+						debugging the engine. Multithread variant (MT).
 
-    The build environment makes use of a number of environment variables:
-    
-       DEBUG        YES for debug version, NO or not set for release version,
-                    or ASSERT for asserts only build.
+		MTRELEASE		Retail version of the enigne with debug symbols and optimization,
+						used for testing the product before shipping. Multithread variant (MT).
+		
+		MTDISTRIBUTE	Retail version with no debug symbols, shipped to the end-user.
+						Multithread variant (MT).
 
-       THREAD       YES for multi-threaded run-time, DLL for multi-threaded DLL,
-                    or anything else for non multi-threaded run-time.
+		MDDEBUG			Debug configuration with no optimization, used for developing and
+						debugging the engine. Multithreaded DLL variant (MD).
 
-       MSVC         If INCLUDE or LIB is not set, this is used to set the default
-                    directories where MSVC points to the Visual C library
-                    (set MSVC=D:\msdev\vc98 for example).
-
-       LINKMAP      If set to YES, then a link map file is generated.
-
-       MYTH95ROOT   Set to the root of the MythOS95 directory.
-
-    The build environment assumes that the PATH has already been updated for the
-    compiler tools.  The VCVARS32.BAT should work for this, although you might want
-    more direct control by writing your own batch or editing your AUTOEXEC.BAT.
-
-    The MFC-based tools are setup to build release versions with the
-    'mk.bat' but full control files have been included for use with
-    Microsoft's Developer Studio.
-
-    To perform a build in all directories, change to the Source directory
-    and run the 'build' batch after setting the preferred environment
-    variables:
-
-    	'build release' will build and release all the libraries to the
-	Inc and Lib directories.
-
-	'build clean' will erase all library temporary files for a rebuild.
-
-	'build tools' will build and release all the utilities to the
-	Bin directory.  Libraries must exist before building tools.
-
-              Note: If you don't have the tools for building the
-	            Escher exporter, edit the Escher's mk.bat tools
-		    section.
-
-	'build tests' will build the testers.  Libraries and tools must
-	exist.
-
-	'build examples' will build the examples.  Libraries and tools
-	must exist.
-
-
-
+		MDRELEASE		Retail version of the enigne with debug symbols and optimization,
+						used for testing the product before shipping. Multithreaded DLL variant (MD).
+		
+		MDDISTRIBUTE	Retail version with no debug symbols, shipped to the end-user.
+						Multithreaded DLL variant (MD).
+						
  ---------------------------------------------------------------------------
  BUILDING HELP
 
@@ -438,7 +385,6 @@
 
     Send comments and suggestions to mythos@mythos-engine.org.  Bug
     reports should be sent to mythos_bugs@mythos-engine.org.
-
 
 
  ---------------------------------------------------------------------------

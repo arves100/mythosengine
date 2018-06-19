@@ -77,14 +77,14 @@ END
 // Cursors                                                                  Ё
 //дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
 
-IDC_SIM_ARROW   CURSOR  DISCARDABLE "..\\res\\arrow2.cur"
+IDC_SIM_ARROW   CURSOR  DISCARDABLE "res\\arrow2.cur"
 
 
 //дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
 // Icons (Large and Small)                                                  Ё
 //дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
 
-IDI_SIM_APPICON ICON "..\\res\\charybds.ico"
+IDI_SIM_APPICON ICON "res\\charybds.ico"
 
 
 

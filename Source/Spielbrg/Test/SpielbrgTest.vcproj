@@ -58,6 +58,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="ddraw.lib Strmiids.lib"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -127,6 +129,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="ddraw.lib Strmiids.lib"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -156,6 +160,18 @@
 		</Configuration>
 	</Configurations>
 	<References>
+		<ProjectReference
+			ReferencedProjectIdentifier="{AF1CC063-0C51-4EA4-B9CA-5527EACD015C}"
+			RelativePathToProject=".\Source\Spielbrg\Spielbrg.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
+			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{6BFB5819-7D0D-4BC8-BF1F-24AB5FD72DBB}"
+			RelativePathToProject=".\Source\XFile\XFile.vcproj"
+		/>
 	</References>
 	<Files>
 		<Filter

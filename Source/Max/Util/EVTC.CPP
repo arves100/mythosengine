@@ -88,6 +88,7 @@ extern void compile (const char *evt_name);
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 
 extern "C" FILE *yyin;
+extern "C" int YY_lineno;
 
 STATIC char Util_name[]
        = "°± Max CEL Compiler - (C) 1994-1999 by D. Higdon, T. Little, and C. Walbourn ±°\n"

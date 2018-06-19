@@ -41,8 +41,9 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <malloc.h>
-
 #include <assert.h>
+#include <xstddef>
+#include <new>
 
 #include "ivory.hpp"
 
@@ -67,8 +68,8 @@ extern "C" void *main_memory;
 //
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 
-#if 1
-void *operator new (size_t size)
+#if 0
+void * __CRTDECL operator new (size_t size) _THROW1(std::bad_alloc)
 {
     assertMyth("Ivory operator new needs valid size", size > 0);
     if (main_memory)
@@ -77,7 +78,7 @@ void *operator new (size_t size)
         return malloc (size);
 }
 
-void operator delete (void *ptr)
+void __CRTDECL operator delete (void *ptr) _THROW0()
 {
     assertMyth("Ivory operator delete needs valid pointer", ptr != 0);
     if (main_memory)

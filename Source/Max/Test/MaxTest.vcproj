@@ -58,7 +58,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dinput.lib"
+				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
@@ -129,7 +129,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dinput.lib"
+				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"

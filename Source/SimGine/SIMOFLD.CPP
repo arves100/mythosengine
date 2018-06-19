@@ -106,8 +106,9 @@ BOOL SimOffield::insert(ushort t)
 
 //ÄÄÄ Find empty slot
     SimulatorState::sim_team_t *st = &parent->teams[t];
+	int i = 0;
 
-    for (int i=0; i < st->ofld_max; i++)
+    for (i=0; i < st->ofld_max; i++)
     {
         if (!st->offields[i])
             break;

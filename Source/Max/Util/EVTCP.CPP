@@ -43,7 +43,14 @@
 
 #include <conio.h>
 #include <iostream>
+
+#if _MSC_VER >= 1300 
+#include <sstream>
+#define ostrstream ostringstream
+#else
 #include <strstrea.h>
+#endif
+
 #include <stdlib.h>
 #include <debug.h>
 
@@ -88,7 +95,7 @@ STATIC long term(void);
 STATIC long factor(void);
 
 STATIC void match(int tok);
-STATIC void error(const char *str);
+extern "C" void error(const char *str);
 
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 //
@@ -210,7 +217,7 @@ STATIC void event()
         {
             // store the event number with the specified trigger
             s << "#define " << ident << " MaxEvent (" << event_id << ")\r\n";
-            header.write (s.str(), s.pcount());
+            header.write (s.str().c_str(), /*s.pcount()*/s.str().size());
 
             match (YY_LBRACE);
             while (CurrentToken && CurrentToken != YY_RBRACE)
@@ -492,13 +499,12 @@ STATIC void match (int tok)
     CurrentToken = yylex();
 }
 
-
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 // error                                                                    ³
 //                                                                          ³
 // Emits an error and aborts processing.                                    ³
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-STATIC void error (const char *str)
+void error (const char *str)
 {
    cout << " Error(" << YY_lineno << "): " << str << "\n";
    exit (1);

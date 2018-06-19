@@ -1643,9 +1643,11 @@ BOOL EscherTest::SetupAnimation(const char *buff)
         return FALSE;
     }
 
+	int i = 0;
+
     // look into the Keyframe Manager and copy the key_types into the temp array in order of appearance
     EschKeyframeMan->get_next_chain_type(0, kchain_temp[0].key_type);
-    for (int i=1; i<anim_chain_count; i++)
+    for (i=1; i<anim_chain_count; i++)
     {
         EschKeyframeMan->get_next_chain_type(kchain_temp[i-1].key_type, kchain_temp[i].key_type);
     }

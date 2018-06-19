@@ -362,6 +362,7 @@ void EschMeshDraw::draw()
         }
 
         //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴 Transform face's verts
+#if _AMD3DNOW
         if (EschSysInstance->flags & ESCH_SYS_AMD3D)
         {
             //컴� Vertex A
@@ -433,6 +434,7 @@ void EschMeshDraw::draw()
             esch_amd3d_fpureset();
         }
         else
+#endif
         {
             //컴� Vertex A
             if (!(ec.vflags[face->a] & ESCH_VVERT_TRANSFORMED))

@@ -41,7 +41,7 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-#include <stdli.h>
+//#include <stdli.h>
 #include <string.h>
 
 #include "bach.hpp"

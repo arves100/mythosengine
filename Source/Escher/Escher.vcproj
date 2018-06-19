@@ -13,6 +13,9 @@
 		/>
 	</Platforms>
 	<ToolFiles>
+		<DefaultToolFile
+			FileName="masm.rules"
+		/>
 	</ToolFiles>
 	<Configurations>
 		<Configuration
@@ -29,6 +32,10 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
+				Name="MASM"
+				IncludePaths="&quot;$(SolutionDir)Inc&quot;"
+			/>
+			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -40,7 +47,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -90,6 +97,10 @@
 				Name="VCCustomBuildTool"
 			/>
 			<Tool
+				Name="MASM"
+				IncludePaths="&quot;$(SolutionDir)Inc&quot;"
+			/>
+			<Tool
 				Name="VCXMLDataGeneratorTool"
 			/>
 			<Tool
@@ -102,7 +113,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -146,6 +157,14 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\Build\ESBLDMSH.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Build\ESBLDTXT.CPP"
+				>
+			</File>
+			<File
 				RelativePath=".\ESCAMERA.CPP"
 				>
 			</File>
@@ -154,7 +173,31 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Element\ESCLIP.CPP"
+				>
+			</File>
+			<File
 				RelativePath=".\ESDATA.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESDRAW.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Element\ESDRFACE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Element\ESDRLINE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Element\ESDRPNT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Element\ESELEMNT.CPP"
 				>
 			</File>
 			<File
@@ -166,7 +209,147 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Math\ESFREF.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Math\ESFRROT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESGEOM.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Partn\ESGPARTN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Motion\ESKEYDRW.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Motion\ESKEYFRM.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Light\ESLATTEN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Light\ESLFATN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Light\ESLFPNT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Light\ESLFSPOT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Light\ESLIGHT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Motion\ESLIMB.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Motion\ESLIMBSG.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\eslindrw.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESLOD.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Light\ESLPOINT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Light\ESLSPOT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Light\ESLVECT.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Math\ESMATH.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Math\ESMATRIX.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESMESH.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESMESHDR.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESMETABX.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Partn\ESOPARTN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Particle\ESPARTIK.CPP"
+				>
+			</File>
+			<File
 				RelativePath=".\ESPCH.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\esplndrw.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESPLOSN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESPNTDRW.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Particle\ESPRTGEN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Particle\ESPRTGEO.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Particle\ESPRTLIN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Particle\ESPRTPYR.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Particle\ESPRTSPR.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Particle\ESPRTSYS.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Partn\ESQPARTN.CPP"
 				>
 			</File>
 			<File
@@ -174,7 +357,67 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Draw\ESSFIELD.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Draw\ESSPRITE.CPP"
+				>
+			</File>
+			<File
 				RelativePath=".\ESSYSTEM.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Texture\ESTCACHE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Terrain\ESTERNDR.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Terrain\esternex.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Terrain\esterran.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Texture\ESTFILE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Motion\ESTOKEN.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Terrain\estrtop.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Texture\ESTXFIRE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Texture\ESTXTMFR.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Texture\ESTXTPRC.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Texture\ESTXTSTC.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Texture\ESTXTURE.CPP"
+				>
+			</File>
+			<File
+				RelativePath=".\Math\ESVECTOR.CPP"
 				>
 			</File>
 		</Filter>

@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="TurnerTest"
-	ProjectGUID="{C0EDB465-5831-4B61-A84D-6E3458B47375}"
-	RootNamespace="TurnerTest"
+	Name="eshlw"
+	ProjectGUID="{BFDE9F14-48F5-477A-9CC0-FE31E9B133ED}"
+	RootNamespace="eshlw"
 	TargetFrameworkVersion="196613"
 	>
 	<Platforms>
@@ -58,8 +58,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dplayx.lib"
-				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -129,8 +127,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dplayx.lib"
-				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -161,12 +157,20 @@
 	</Configurations>
 	<References>
 		<ProjectReference
-			ReferencedProjectIdentifier="{8D3BA636-DFBE-438B-A9CB-D61274CBD80C}"
-			RelativePathToProject=".\Source\Turner\Turner.vcproj"
+			ReferencedProjectIdentifier="{6BFB5819-7D0D-4BC8-BF1F-24AB5FD72DBB}"
+			RelativePathToProject=".\Source\XFile\XFile.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{5521F7FC-2818-4275-9AD6-1448A8A6C716}"
+			RelativePathToProject=".\Source\Escher\Escher.vcproj"
 		/>
 		<ProjectReference
 			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
 			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{6653C888-6937-4BF1-8A9D-E667F3D9B63F}"
+			RelativePathToProject=".\Source\System\System.vcproj"
 		/>
 	</References>
 	<Files>
@@ -176,7 +180,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\turntest.cpp"
+				RelativePath=".\ESHLW.CPP"
 				>
 			</File>
 		</Filter>
@@ -196,7 +200,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\RESOURCE.RC"
+				RelativePath=".\eshlw.rc"
 				>
 			</File>
 		</Filter>

@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="TurnerTest"
-	ProjectGUID="{C0EDB465-5831-4B61-A84D-6E3458B47375}"
-	RootNamespace="TurnerTest"
+	Name="iffdir"
+	ProjectGUID="{0336F04E-571C-49EC-8984-3E1B114075C0}"
+	RootNamespace="iffdir"
 	TargetFrameworkVersion="196613"
 	>
 	<Platforms>
@@ -58,8 +58,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dplayx.lib"
-				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -129,8 +127,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dplayx.lib"
-				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -161,12 +157,8 @@
 	</Configurations>
 	<References>
 		<ProjectReference
-			ReferencedProjectIdentifier="{8D3BA636-DFBE-438B-A9CB-D61274CBD80C}"
-			RelativePathToProject=".\Source\Turner\Turner.vcproj"
-		/>
-		<ProjectReference
-			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
-			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+			ReferencedProjectIdentifier="{6BFB5819-7D0D-4BC8-BF1F-24AB5FD72DBB}"
+			RelativePathToProject=".\Source\XFile\XFile.vcproj"
 		/>
 	</References>
 	<Files>
@@ -176,7 +168,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\turntest.cpp"
+				RelativePath=".\XUIFFDIR.CPP"
 				>
 			</File>
 		</Filter>
@@ -192,11 +184,7 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath=".\charybds.ico"
-				>
-			</File>
-			<File
-				RelativePath=".\RESOURCE.RC"
+				RelativePath=".\xuiffdir.rc"
 				>
 			</File>
 		</Filter>

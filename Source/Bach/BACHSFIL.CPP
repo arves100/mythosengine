@@ -44,6 +44,8 @@
 
 #include "bach.hpp"
 
+#define DSBCAPS_CTRLDEFAULT DSBCAPS_CTRLPAN|DSBCAPS_CTRLVOLUME|DSBCAPS_CTRLFREQUENCY
+
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 //
 //                                Equates

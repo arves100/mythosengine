@@ -105,8 +105,9 @@ BOOL SimTemp::insert(ushort t)
 
     team = t;
 
+	int i = 0;
 //ÄÄÄ Find empty slot
-    for (int i=0; i < parent->temp_max; i++)
+    for (i=0; i < parent->temp_max; i++)
     {
         if (!parent->temps[i])
             break;

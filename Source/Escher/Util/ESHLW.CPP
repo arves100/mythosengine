@@ -997,8 +997,10 @@ STATIC BOOL process_surfaces(XFParseIFF &iff, Surface *surfs, ulong max)
             return FALSE;
         }
 
+		ulong index=0;
+
         //ÄÄÄ Find corresponding structure in surface list
-        for(ulong index=0; index < max; index++)
+        for(; index < max; index++)
         {
             if (!strcmp(surfs[index].name,data))
                 break;
@@ -1011,7 +1013,8 @@ STATIC BOOL process_surfaces(XFParseIFF &iff, Surface *surfs, ulong max)
 
         //ÄÄÄ Find start of data
         ulong s = 0;
-        for(byte *ptr=(byte*)data; *ptr; ptr++, s++);
+		byte *ptr = NULL;
+        for(ptr=(byte*)data; *ptr; ptr++, s++);
 
         if (s & 0x1)
         {

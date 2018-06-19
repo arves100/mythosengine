@@ -85,6 +85,7 @@ extern void compile(void);
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 
 extern "C" FILE *yyin;
+extern "C" int YY_lineno;
 
 STATIC char Util_name[]
        = "°± Gutenberg String Utility - 1995-9 by D. Higdon, T. Little, C. Walbourn ±°\n"
@@ -478,6 +479,17 @@ extern "C" void _charybdis_assert(char *msg, char *exp, char *f, unsigned ln)
         printf("Comment:\n%s\n",msg);
     }
 
+    exit(1);
+}
+
+//ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+// error                                                                    ³
+//                                                                          ³
+// Emits an error and aborts processing.                                    ³
+//ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+extern "C" void error(const char *str)
+{
+    cout << " Error(" << YY_lineno << "): " << str << "\n";
     exit(1);
 }
 

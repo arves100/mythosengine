@@ -289,6 +289,7 @@ void EschSystem::release()
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 esch_error_codes EschSystem::enable_amd3d()
 {
+#if _AMD3DNOW
     if (!(flags & ESCH_SYS_AMD3D_FOUND))
         return ESCH_ERR_NOTSUPPORTED;
 
@@ -302,10 +303,14 @@ esch_error_codes EschSystem::enable_amd3d()
     esch_concatmatrix       = esch_amd3d_concatmatrix;
 
     return ESCH_ERR_NONE;
+#else
+	return ESCH_ERR_NOTSUPPORTED;
+#endif
 }
 
 void EschSystem::disable_amd3d()
 {
+#if _AMD3DNOW
     flags &= ~ESCH_SYS_AMD3D;
 
     esch_transform          = esch_flt_transform;
@@ -314,6 +319,7 @@ void EschSystem::disable_amd3d()
     esch_cross              = esch_flt_cross;
     esch_normalize          = esch_flt_normalize;
     esch_concatmatrix       = esch_flt_concatmatrix;
+#endif
 }
 
 //°±² End of module - essystem.cpp ²±°

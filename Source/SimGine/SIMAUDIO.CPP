@@ -249,10 +249,12 @@ int SimAudio::prepare_wav(const char *fname, int channel)
     if (!channels)
         return -1;
 
+	ulong i = 0;
+
 //ÄÄÄÄ Find free channel
     if (channel == -1)
     {
-        for(ulong i=nreserved; i < nchannels; i++)
+        for(i=nreserved; i < nchannels; i++)
         {
             if (!channels[i]->handle
                 || !(channels[i]->status() & BACH_SMPSTAT_PLAYING))

@@ -86,6 +86,7 @@ extern void capture_tt(char *name, char *ttname,
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 
 extern "C" FILE *yyin;
+extern "C" int YY_lineno;
 
 STATIC char Util_name[]
        = "°± Gutenberg Font Utility - (C) 1995-9 by D. Higdon, T. Little, C. Walbourn ±°\n"
@@ -531,6 +532,17 @@ extern "C" void _charybdis_assert(char *msg, char *exp, char *f, unsigned ln)
 
     exit(1);
 }
+//ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+// error                                                                    ³
+//                                                                          ³
+// Emits an error and aborts processing.                                    ³
+//ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+extern "C" void error(const char *str)
+{
+    cout << " Error(" << YY_lineno << "): " << str << "\n";
+    exit(1);
+}
+
 
 //°±² End of module - gfont.cpp ²±°
 

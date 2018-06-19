@@ -198,8 +198,8 @@ BOOL PumpWindows()
 //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
 LRESULT CALLBACK ClientWndProc (HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-    static shift = 0;
-    static ctrl = 0;
+    static int shift = 0;
+    static int ctrl = 0;
 
     switch (message)
     {

@@ -129,10 +129,12 @@ BOOL SimUnit::insert(ushort t)
 
     team = t;
 
+	int i = 0;
+
 //ÄÄÄ Find empty slot
     SimulatorState::sim_team_t *st = &parent->teams[t];
 
-    for (int i=0; i < st->unit_max; i++)
+    for (i=0; i < st->unit_max; i++)
     {
         if (!st->units[i])
             break;

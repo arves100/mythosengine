@@ -164,6 +164,7 @@ bach_err_codes BachSampleSequencer::add (BachStaticSample *sample,
     const BOOL resume = (sequence == 0);
 
     Link *p = new Link (sample);
+	Link *s = NULL;
     if (!p)
     {
         LeaveCriticalSection (&critical_section);
@@ -176,8 +177,7 @@ bach_err_codes BachSampleSequencer::add (BachStaticSample *sample,
         sequence = p;
     else
     {
-        for (Link *s = sequence; s->next != 0; s = s->next)
-            ;
+        for (s = sequence; s->next != 0; s = s->next);
         s->next = p;
     }
 
