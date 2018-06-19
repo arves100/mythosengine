@@ -51,17 +51,6 @@
  |
  +--Bin                             Utility programs
  |
- +--Lib                             Production Libraries (multi-threaded static)
- |  |
- |  +--Assert                       Assert version of libraries (multi-threaded static)
- |  |
- |  +--ML                           Production Libraries (single-threaded)
- |  |
- |  +--Assert.ML                    Assert version libraries (single-threaded)
- |  |
- |  +--Assert.MD                    Assert version libraries (multi-threaded DLL)
- |  |
- |  +--MD                           Production Libraries (multi-threaded DLL)
  |
  +--Source
     +--Bach                         Bach (Sound library)
@@ -287,10 +276,7 @@
     current status and work notes.
 
     This version of NynthonEngine was built with Microsoft Visual C++ v9.0.
-	 (Microsoft Visual Studio 2008) with DirectX 7 SDK
-
-    The engine allows building with dynamic/static linking of MSVC at your
-	option (/MT or /MD). See configurations for more information.
+	 (Microsoft Visual Studio 2008) with DirectX 7 SDK with Multithreaded DLL support (MD)
 
     MFC Version 6.x support DLLs are installed as part of the NynthonEngine
     installation procedure since they are required by the MFC-based tools.
@@ -348,24 +334,14 @@
 		WIN32			Windows NT platforms with a x86 compatible processor.
 			
 	Configurations:
-		MTDEBUG			Debug configuration with no optimization, used for developing and
-						debugging the engine. Multithread variant (MT).
+		DEBUG			Debug configuration with no optimization, used for developing and
+						debugging the engine.
 
-		MTRELEASE		Retail version of the enigne with debug symbols and optimization,
-						used for testing the product before shipping. Multithread variant (MT).
+		RELEASE		Retail version of the enigne with debug symbols and optimization,
+						used for testing the product before shipping.
 		
-		MTDISTRIBUTE	Retail version with no debug symbols, shipped to the end-user.
-						Multithread variant (MT).
+		DISTRIBUTE	Retail version with no debug symbols, shipped to the end-user.
 
-		MDDEBUG			Debug configuration with no optimization, used for developing and
-						debugging the engine. Multithreaded DLL variant (MD).
-
-		MDRELEASE		Retail version of the enigne with debug symbols and optimization,
-						used for testing the product before shipping. Multithreaded DLL variant (MD).
-		
-		MDDISTRIBUTE	Retail version with no debug symbols, shipped to the end-user.
-						Multithreaded DLL variant (MD).
-						
  ---------------------------------------------------------------------------
  BUILDING HELP
 

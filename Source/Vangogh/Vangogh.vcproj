@@ -50,7 +50,9 @@
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
+				SmallerTypeCheck="true"
 				RuntimeLibrary="3"
+				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
 				DebugInformationFormat="4"
 			/>
@@ -112,8 +114,83 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				Optimization="2"
+				Optimization="3"
+				InlineFunctionExpansion="2"
 				EnableIntrinsicFunctions="true"
+				FavorSizeOrSpeed="2"
+				OmitFramePointers="true"
+				EnableFiberSafeOptimizations="true"
+				WholeProgramOptimization="true"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="true"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Distribute|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="4"
+			CharacterSet="2"
+			WholeProgramOptimization="1"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="MASM"
+				IncludePaths="$(SolutionDir)Inc"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="3"
+				InlineFunctionExpansion="2"
+				EnableIntrinsicFunctions="true"
+				FavorSizeOrSpeed="2"
+				OmitFramePointers="true"
+				EnableFiberSafeOptimizations="true"
+				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -270,6 +347,13 @@
 						Name="MASM"
 					/>
 				</FileConfiguration>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\8BPP\PGTTRI8.CPP"
@@ -366,6 +450,13 @@
 			<File
 				RelativePath=".\16BPP\VGITRN16.ASM"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\16BPP\VGPOLY16.CPP"
@@ -374,6 +465,13 @@
 			<File
 				RelativePath=".\16BPP\VGRECT16.ASM"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\16BPP\VGVPDB16.CPP"
@@ -390,6 +488,13 @@
 			<File
 				RelativePath=".\vngclip.asm"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\VNGCOLOR.CPP"
@@ -402,6 +507,13 @@
 			<File
 				RelativePath=".\NewTri\VNGEDGE.ASM"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\vnggen.cpp"
@@ -430,6 +542,13 @@
 			<File
 				RelativePath=".\8BPP\vngitrn8.asm"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\VNGITRNS.ASM"
@@ -443,6 +562,13 @@
 				</FileConfiguration>
 				<FileConfiguration
 					Name="Release|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Distribute|Win32"
 					>
 					<Tool
 						Name="MASM"
@@ -470,6 +596,13 @@
 						Name="MASM"
 					/>
 				</FileConfiguration>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\VNGPCH.CPP"
@@ -478,6 +611,13 @@
 			<File
 				RelativePath=".\8BPP\vngpix8.asm"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\NewTri\VNGPOLY.CPP"
@@ -498,6 +638,13 @@
 			<File
 				RelativePath=".\8BPP\vngrect8.asm"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\8BPP\VNGSBLT8.CPP"
@@ -558,6 +705,13 @@
 			<File
 				RelativePath=".\vngzrect.asm"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\16BPP\ZGRTRI16.CPP"
@@ -582,6 +736,13 @@
 			<File
 				RelativePath=".\8BPP\zpghlin8.asm"
 				>
+				<FileConfiguration
+					Name="Distribute|Win32"
+					>
+					<Tool
+						Name="MASM"
+					/>
+				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\8BPP\ZPGTTRI8.CPP"
