@@ -341,6 +341,7 @@ BOOL CreateTextureDlg::setup_dib()
 
     int bitmap_width = 0;
     int bitmap_height = 0;
+	int i = 0;
 
     // At this point we know that the foreground bitmap in dib_fname has
     // a width and height that is 16, 32, 64, 128 or 256.
@@ -1454,6 +1455,7 @@ void TxtPropGenPage::OnBrowse()
 
 void TxtPropGenPage::OnView()
 {
+	int i = 0;
     if (!UpdateData(TRUE))
         return;
 
@@ -1717,7 +1719,9 @@ void TxtPropGenPage::OnCreateNewTexture()
     dlg.m_height = bm.width;
     dlg.dib_fname = m_fname;
 
-    for (int i=0; i <4; i++)
+	int i = 0;
+
+    for (i=0; i <4; i++)
         colors[i] = pDoc->palette.get_index((VngoColor24bit)m_color);
 
     for (i=0;i<4;i++)

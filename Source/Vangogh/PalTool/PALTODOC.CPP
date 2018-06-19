@@ -1000,6 +1000,7 @@ void CPalToolDoc::calc_linear_colors (VngoColor24bit *colors, int steps,
     VngoColorHLS    hlst;
     Flx16           t1;
     Flx16           base,mean,step,step2,max;
+	int i = 0;
 
     hlst = color;
     mean = hlst.l;
@@ -1010,7 +1011,7 @@ void CPalToolDoc::calc_linear_colors (VngoColor24bit *colors, int steps,
 
         break_point--;  // Convert to 0 based value
 
-    for (int i = break_point-1; i >= 0; i--)
+    for (i = break_point-1; i >= 0; i--)
     {
         hlst.l -= step;
         colors[i] = hlst;
@@ -1080,13 +1081,13 @@ void CPalToolDoc::CalcShades ()
         switch (curve_mode)
         {
         case LINEAR:
-            calc = calc_linear_colors;
+			calc = &CPalToolDoc::calc_linear_colors;
                     break;
             case BEZIER:
-            calc = calc_bez_colors;
+            calc = &CPalToolDoc::calc_bez_colors;
                 break;
         case QUADRATIC:
-            calc = calc_quad_colors;
+            calc = &CPalToolDoc::calc_quad_colors;
                     break;
         }
 

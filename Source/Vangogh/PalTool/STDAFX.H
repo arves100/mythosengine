@@ -41,6 +41,8 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
+#define _WIN32_WINNT 0x501 //Windows XP
+
 #include <afxwin.h>         // MFC core and standard components
 #include <afxext.h>         // MFC extensions
 #include <afxcmn.h>         // MFC common dialog interface

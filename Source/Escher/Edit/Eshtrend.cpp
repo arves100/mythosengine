@@ -365,7 +365,7 @@ void TerrEditRender::OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
 {
     int     t, pos, render=0;
     float   f;
-    static  lastpos=0;
+    static int  lastpos=0;
 
     TerrEditDoc* pDoc = (TerrEditDoc*)((CView *) GetParent())->GetDocument();
     ASSERT_VALID(pDoc);
@@ -610,7 +610,7 @@ void TerrEditRender::OnVScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
 {
     int     t, pos, render=0;
     float   f;
-    static  lastpos=0;
+    static int lastpos=0;
 
     TerrEditDoc* pDoc = (TerrEditDoc*) ((CView *) GetParent())->GetDocument();
     ASSERT_VALID(pDoc);

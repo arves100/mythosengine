@@ -384,7 +384,8 @@ void TerrEditDoc::compress_heights_averaged(float threshold,
 
         for(long cnt=counts[hcount-1];;)
         {
-            for(long stop=hcount-1; stop > 0; stop--)
+			long stop = 0;
+            for(stop=hcount-1; stop > 0; stop--)
             {
                 if (counts[stop-1] > cnt)
                     break;
@@ -915,12 +916,13 @@ BOOL TerrEditDoc::import_heights_from_pcx(const char *fname)
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 void TerrEditDoc::ImportTerrain(const char *fname, int losswarn)
 {
+	int i = 0;
     ASSERT(width && depth && hfield && htable);
 
     if (losswarn)
     {
         byte *ptr=hfield;
-        for(int i=0; i < (width * depth); i++)
+        for(i=0; i < (width * depth); i++)
         {
             if (*(ptr++))
                 break;

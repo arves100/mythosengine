@@ -180,6 +180,7 @@ void TerrEditDoc::Dump(CDumpContext& dc) const
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 void TerrEditDoc::DeleteContents()
 {
+	int i = 0;
     for (EschLight *lptr=lights; lptr;)
     {
         EschLight   *t=lptr;
@@ -188,7 +189,7 @@ void TerrEditDoc::DeleteContents()
     }
     lights=0;
 
-    for(int i=0; i < txtNumb; i++)
+    for(i=0; i < txtNumb; i++)
     {
         txtName[i].Empty();
         txtFName[i].Empty();
@@ -1263,14 +1264,14 @@ void TerrEditDoc::ExportToIFF(const char *fname)
             {
                 ushort flags=0;
 
-                long i = long(ptr->i * 65536.0f);
+                long ix = long(ptr->i * 65536.0f);
                 long j = long(ptr->j * 65536.0f);
                 long k = long(ptr->k * 65536.0f);
 
-                if (i < 0)
+                if (ix < 0)
                 {
                     flags |= 0x8;
-                    i = -i;
+                    ix = -ix;
                 }
                 if (j < 0)
                 {
@@ -1283,11 +1284,11 @@ void TerrEditDoc::ExportToIFF(const char *fname)
                     k = -k;
                 }
 
-                *(sptr++) = (ushort)(i & 0xffff);
+                *(sptr++) = (ushort)(ix & 0xffff);
                 *(sptr++) = (ushort)(j & 0xffff);
                 *(sptr++) = (ushort)(k & 0xffff);
 
-                if (i & 0x00010000)
+                if (ix & 0x00010000)
                     flags |= 0x1;
                 if (j & 0x00010000)
                     flags |= 0x2;
@@ -1924,11 +1925,12 @@ void TerrEditDoc::GetMinMaxElevations(float &min, float &max)
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 void TerrEditDoc::SetBaseElevation(float newbase)
 {
+	int i = 0;
     if (!htable)
         return;
 
     float base=FLT_MAX;
-    for(int i=0; i < 256; i++)
+    for(i=0; i < 256; i++)
     {
         if (htable[i] < base)
             base = htable[i];

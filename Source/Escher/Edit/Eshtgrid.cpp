@@ -539,6 +539,8 @@ void TerrEditGrid::assign_by_height(TerrEditDoc* pDoc,
                              + (dspos << surfshift)*(width << surfshift)
                              + (xspos << surfshift))];
 
+	ulong i = 0;
+
 //ÄÄÄ Check to see if point fullfills criteria
     if (h >= a_values[0] && h < a_stop)
     {
@@ -548,7 +550,7 @@ void TerrEditGrid::assign_by_height(TerrEditDoc* pDoc,
             changed=TRUE;
         }
 
-        for(ulong i=0; i < a_count-1; i++)
+        for(i=0; i < a_count-1; i++)
         {
             if (h < a_values[i+1])
                 break;
@@ -624,6 +626,8 @@ void TerrEditGrid::assign_by_random_roll(TerrEditDoc* pDoc,
             return;
     }
 
+
+	ulong i = 0;
 //ÄÄÄ Perform roll
     int roll = ((int)flx_rand()) % 100;
     if (roll < 0)
@@ -637,7 +641,7 @@ void TerrEditGrid::assign_by_random_roll(TerrEditDoc* pDoc,
             changed=TRUE;
         }
 
-        for(ulong i=0; i < a_count-1; i++)
+        for(i=0; i < a_count-1; i++)
         {
             if (roll < a_values_int[i+1])
                 break;
@@ -722,6 +726,7 @@ void TerrEditGrid::assign_by_angle(TerrEditDoc* pDoc,
 
     float dot = *nml DOT EschVector(0,1,0);
 
+	ulong i =0;
 //ÄÄÄ Check to see if point fullfills criteria
     if (dot <= a_values[0] && dot > a_stop)
     {
@@ -731,7 +736,7 @@ void TerrEditGrid::assign_by_angle(TerrEditDoc* pDoc,
             changed=TRUE;
         }
 
-        for(ulong i=0; i < a_count-1; i++)
+        for(i=0; i < a_count-1; i++)
         {
             if (dot > a_values[i+1])
                 break;

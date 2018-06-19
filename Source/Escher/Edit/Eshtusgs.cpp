@@ -163,8 +163,9 @@ USGSFileParseDEM::usgs_error USGSFileParseDEM::read_next_token(Token *tk)
 //ÄÄÄ Read in next token
     memset(buff, 0, sizeof(buff));
     buff[0] = ch;
+	ulong i = 0;
 
-    for(ulong i=1; i < sizeof(buff); i++)
+    for(i=1; i < sizeof(buff); i++)
     {
         if (xf.read(&ch,1) != 1)
         {
