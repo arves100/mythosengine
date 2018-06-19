@@ -155,7 +155,7 @@ void main (int argc, char *argv[])
                         return;
                     }
                     ofn = argv[i];
-                    strlwr (ofn);
+					_strlwr (ofn);
                     break;
 
                 case 'h':   // HPP file name
@@ -165,7 +165,7 @@ void main (int argc, char *argv[])
                         return;
                     }
                     hfn = argv[i];
-                    strlwr (hfn);
+                    _strlwr (hfn);
                     break;
                 }
                 break;
@@ -178,7 +178,7 @@ void main (int argc, char *argv[])
         else if (!ifn)
         {
             ifn = argv[i];
-            strlwr (ifn);
+            _strlwr (ifn);
         }
     }
 

@@ -1270,7 +1270,7 @@ STATIC void bitmap(void)
             break;
         }
     }
-    strlwr(buff);
+    _strlwr(buff);
 
 //ÄÄÄ Load bitmap, if possible
     XFBitmap bm;

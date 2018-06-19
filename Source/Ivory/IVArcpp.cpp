@@ -38,11 +38,14 @@
 //
 //°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 
+#include "ivory.h"
+#include "ivory.hpp"
+
 #include <malloc.h>
 #include <memory.h>
 #include <new.h>
 #include <assert.h>
-#include "ivory.hpp"
+
 
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 //
@@ -69,6 +72,20 @@ void *operator new (size_t size, IvorySubAlloc *suballoc)
     assertMyth("Ivory Sub Alloc operator new needs valid inputs",
                 size > 0 && suballoc != 0);
     return ivory_sub_alloc (suballoc, size);
+}
+
+void operator delete (void* ptr, IvoryArena *arena)
+{
+    assertMyth("Ivory Arena operator delete needs valid inputs",
+                ptr == NULL);
+    delete (ptr);
+}
+
+void operator delete (void* ptr, IvorySubAlloc *suballoc)
+{
+    assertMyth("Ivory Sub Alloc operator delete needs valid inputs",
+                ptr == NULL);
+    delete(ptr);
 }
 
 #if 0

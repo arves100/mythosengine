@@ -48,6 +48,14 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN 1
+#endif
+
+#include <platform.h>
+
+#include <Windows.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -56,6 +64,7 @@ extern "C" {
 #include <portable.h>
 #include <malloc.h>
 #include <string.h>
+#include <assert.h>
 
 //#include "ivmem.h"
 

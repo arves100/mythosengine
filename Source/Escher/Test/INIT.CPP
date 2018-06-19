@@ -138,7 +138,7 @@ BOOL InitApplication (HINSTANCE hInstance, int nCmdShow)
         ini.section("Screen");
         if (!ini.read("Resolution",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"640x480"))
             {
                 map_xsize = 640;

@@ -648,7 +648,7 @@ esch_error_codes EschGridPartition::collide(EschCollision *data) const
 
             for(d=sd; d <= ed; d++)
             {
-                long n = (d*width) + sw + 1;
+                ulong n = (d*width) + sw + 1;
                 assert(n < nregions);
                 for(w=sw; w <= ew; w++, n++)
                 {

@@ -1430,7 +1430,7 @@ STATIC void pause(void)
     {
         cout << "°° More °°\r";
         cout.flush();
-        getch();
+        _getch();
         Line=1;
     }
 }

@@ -135,7 +135,7 @@ EscherTest::EscherTest (MaxDevices *d):
         ini.section("Screen");
         if (!ini.read("TargetName",targetname))
         {
-            strlwr(targetname);
+            _strlwr(targetname);
         }
         else
         {
@@ -143,7 +143,7 @@ EscherTest::EscherTest (MaxDevices *d):
         }
         if (!ini.read("FullScreen",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 use_fullscreen |= VNGO_SET_RESOLUTION;
@@ -152,7 +152,7 @@ EscherTest::EscherTest (MaxDevices *d):
 
         if (!ini.read("TrueFlip",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 use_fullscreen |= VNGO_TRUE_FLIP;
@@ -161,7 +161,7 @@ EscherTest::EscherTest (MaxDevices *d):
 
         if (!ini.read("UseDirectDraw",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 screen = new VngoDirectDraw (hWndClient);
@@ -203,7 +203,7 @@ EscherTest::EscherTest (MaxDevices *d):
 #endif
         if (!ini.read("UseD3D",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 screen = new VngoDirect3D (hWndClient,targetname);
@@ -213,7 +213,7 @@ EscherTest::EscherTest (MaxDevices *d):
 
         if (!ini.read("Resolution",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"640x480"))
             {
                 map_xsize = 640;
@@ -242,7 +242,7 @@ EscherTest::EscherTest (MaxDevices *d):
         }
         if (!ini.read("ZBuffer",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 use_zbuffer = TRUE;
@@ -255,7 +255,7 @@ EscherTest::EscherTest (MaxDevices *d):
 
         if (!ini.read("ColorDepth",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"16"))
             {
                 bpp = 16;
@@ -268,7 +268,7 @@ EscherTest::EscherTest (MaxDevices *d):
 
         if (!ini.read("Palette",palname))
         {
-            strlwr(palname);
+            _strlwr(palname);
         }
         else
         {

@@ -48,11 +48,14 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				SmallerTypeCheck="true"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="Escher.hpp"
 				WarningLevel="3"
 				DebugInformationFormat="4"
 			/>
@@ -122,8 +125,11 @@
 				EnableFiberSafeOptimizations="true"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="Escher.hpp"
 				WarningLevel="3"
 				DebugInformationFormat="3"
 			/>
@@ -192,8 +198,11 @@
 				EnableFiberSafeOptimizations="true"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="Escher.hpp"
 				WarningLevel="3"
 				DebugInformationFormat="3"
 			/>
@@ -387,10 +396,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\ESPCH.CPP"
-				>
-			</File>
-			<File
 				RelativePath=".\Draw\esplndrw.cpp"
 				>
 			</File>
@@ -504,6 +509,102 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath="..\..\Inc\ESBASIC.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESBUILD.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESCAMERA.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESCHER.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESCONTXT.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESDEFS.H"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESDRAW.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESELEMNT.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESEXTS.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESFILE.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESGEOM.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESKEYFRM.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESLIGHT.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESLIMB.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESMATH.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESMATH.INC"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESMISC.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESPARTIK.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESPARTN.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESSCENE.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESSYSTEM.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESTERRAN.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESTOKEN.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\ESTXTURE.HPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"

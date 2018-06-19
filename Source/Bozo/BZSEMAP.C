@@ -45,6 +45,8 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
+#include <bozo.h>
+
 #include <stdlib.h>
 #include <assert.h>
 

@@ -41,6 +41,8 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
+#include <gutenbrg.h>
+
 #include <assert.h>
 #include <string.h>
 

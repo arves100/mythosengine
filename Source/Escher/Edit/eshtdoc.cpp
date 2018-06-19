@@ -1863,13 +1863,13 @@ void TerrEditDoc::ComputeNormals(dword flags)
             break;
     }
 
-    if (flags & NORMALS_SMOOTH)
+    /*if (flags & NORMALS_SMOOTH)
         ivory_hunlock(hsurfnorml);
     else if (flags & NORMALS_FLAT)
-        ivory_hunlock(hsurfnormlflat);
+        ivory_hunlock(hsurfnormlflat);*/
 
 
-    SetModifiedFlag();
+    SetModifiedFlag(TRUE);
     SetLightsModifiedFlag();
 }
 
@@ -3847,7 +3847,7 @@ void TerrEditDoc::Serialize(CArchive& ar)
                                    "Unknown light type found in CST file",
                                    "Load Error",
                                    MB_OK | MB_ICONEXCLAMATION);
-                        AfxThrowArchiveException(CArchiveException::generic);
+                        AfxThrowArchiveException(CArchiveException::genericException);
                         break;
                 }
                 ASSERT(lgt);

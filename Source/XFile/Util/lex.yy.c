@@ -1793,12 +1793,12 @@ YY_BUFFER_STATE b;
 	yy_flex_free( (void *) b );
 	}
 
-
-#ifndef YY_ALWAYS_INTERACTIVE
+// MSVC now defines isatty
+/*#ifndef YY_ALWAYS_INTERACTIVE
 #ifndef YY_NEVER_INTERACTIVE
 extern int isatty YY_PROTO(( int ));
 #endif
-#endif
+#endif*/
 
 #ifdef YY_USE_PROTOS
 void yy_init_buffer( YY_BUFFER_STATE b, FILE *file )
@@ -1821,7 +1821,7 @@ FILE *file;
 #if YY_NEVER_INTERACTIVE
 	b->yy_is_interactive = 0;
 #else
-	b->yy_is_interactive = file ? (isatty( fileno(file) ) > 0) : 0;
+	b->yy_is_interactive = file ? (_isatty( _fileno(file) ) > 0) : 0;
 #endif
 #endif
 	}

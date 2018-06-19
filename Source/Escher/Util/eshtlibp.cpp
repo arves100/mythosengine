@@ -476,7 +476,7 @@ STATIC void texture()
             cout << "   Adding frame '" << yytext << "'...\n";
         }
 
-        strlwr(yytext);
+        _strlwr(yytext);
 
         XFBitmap *bm = new XFBitmap;
         assert(bm != 0);

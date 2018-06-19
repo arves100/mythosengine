@@ -33,6 +33,8 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
+#include "platform.h"
+
 #ifdef __WATCOMC__
 
 #pragma aux _ASMSTKCALL_ "*" \

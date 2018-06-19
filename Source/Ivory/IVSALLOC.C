@@ -34,11 +34,9 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
-#define WIN32_LEAN_AND_MEAN
-#include <windows.h>
-#include <assert.h>
-
 #include "ivory.h"
+
+#include <assert.h>
 
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 //

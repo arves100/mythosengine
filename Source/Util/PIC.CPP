@@ -156,7 +156,7 @@ void main(int argc, char *argv[])
 
 //컴� Setup default palette file
     strcpy(Pal_name,argv[0]);
-    strlwr(Pal_name);
+    _strlwr(Pal_name);
     for(i=strlen(Pal_name); i >= 0; i--)
     {
         if (Pal_name[i]=='\\')
@@ -215,8 +215,8 @@ void main(int argc, char *argv[])
                 case 't':
                     i++;
                     if (i >= argc || *argv[i]=='-' || *argv[i]=='/' ||
-                        (!strstr(strlwr(argv[i]),".pal")
-                         && !strstr(strlwr(argv[i]),".vgp")))
+                        (!strstr(_strlwr(argv[i]),".pal")
+                         && !strstr(_strlwr(argv[i]),".vgp")))
                     {
                         cout << "같 Expected a palette file name\n";
                         return;
@@ -248,7 +248,7 @@ void main(int argc, char *argv[])
                     }
                     Flags |= FLAGS_OUTPUT;
                     outfn=argv[i];
-                    strlwr(outfn);
+                    _strlwr(outfn);
                     break;
 
                 //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴� Transparent
@@ -280,7 +280,7 @@ void main(int argc, char *argv[])
         }
         else if (!fn)
         {
-            fn=strlwr(argv[i]);
+            fn=_strlwr(argv[i]);
         }
     }
 
@@ -329,7 +329,7 @@ void main(int argc, char *argv[])
             cout.flush();
             for(;;)
             {
-                i=getch();
+                i=_getch();
                 cout << (char)i << "\n";
 
                 if (i == 'Y' || i == 'y' || i == 13)
@@ -495,7 +495,7 @@ void main(int argc, char *argv[])
                 {
                     cout << "<more>\r";
                     cout.flush();
-                    getch();
+                    _getch();
                 }
             }
         }

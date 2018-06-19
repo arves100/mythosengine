@@ -285,7 +285,7 @@ STATIC void directory(XFParseIFF &iff)
             if ((Flags & FLAGS_PAUSE) && (++Line >= Maxline))
             {
                 cout << "같 More 같\r";
-                getch();
+                _getch();
                 Line=1;
             }
 
@@ -312,7 +312,7 @@ STATIC void directory(XFParseIFF &iff)
                 {
                     cout << "같 More 같\r";
                     cout.flush();
-                    getch();
+                    _getch();
                     Line=1;
                 }
 
@@ -335,7 +335,7 @@ STATIC void directory(XFParseIFF &iff)
             {
                 cout << "같 More 같\r";
                 cout.flush();
-                getch();
+                _getch();
                 Line=1;
             }
 

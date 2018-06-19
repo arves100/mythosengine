@@ -38,14 +38,14 @@
 //
 //°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 
-#define WIN32_LEAN_AND_MEAN
-#include <windows.h>
+#include "ivory.h"
+#include "ivory.hpp"
+
 #include <malloc.h>
 #include <assert.h>
 #include <xstddef>
 #include <new>
 
-#include "ivory.hpp"
 
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 //

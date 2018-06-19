@@ -39,28 +39,14 @@
 //                                Includes
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
-
+#include "vangogh.hpp"
 #include <string.h>
 #include <assert.h>
 #include "debug.h"
 #include "portable.h"
 #include "ivory.h"
 
-// This file always needs _D3D defined.
-
-#ifndef _D3D
-#define _D3D_TEMP
-#define _D3D
-#endif
-
-#include "vangogh.hpp"
 #include "vngd3d.hpp"
-
-#ifdef  _D3D_TEMP
-#undef  _D3D
-#undef  _D3D_TEMP
-#endif
-
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 //
 //                                Equates

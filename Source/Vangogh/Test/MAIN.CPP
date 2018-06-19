@@ -136,7 +136,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("PixTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->PixTest = TRUE;
         else
@@ -145,7 +145,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("PolyTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->PolyTest = TRUE;
         else
@@ -154,7 +154,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("GPolyTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->GPolyTest = TRUE;
         else
@@ -163,7 +163,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("GRPolyTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->GRPolyTest = TRUE;
         else
@@ -172,7 +172,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("TPolyTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->TPolyTest = TRUE;
         else
@@ -181,7 +181,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("GTPolyTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->GTPolyTest = TRUE;
         else
@@ -190,7 +190,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("TPolyTestPersp",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->TPolyTestPersp = TRUE;
         else
@@ -199,7 +199,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("GTPolyTestPersp",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->GTPolyTestPersp = TRUE;
         else
@@ -208,7 +208,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("LineTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->LineTest = TRUE;
         else
@@ -217,7 +217,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("GLineTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->GLineTest = TRUE;
         else
@@ -227,7 +227,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("ITransTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->ITransTest = TRUE;
         else
@@ -236,7 +236,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("BackGroundFill",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->BackGroundFill = TRUE;
         else
@@ -246,7 +246,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("Reset",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->Reset = TRUE;
         else
@@ -255,7 +255,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("ZBuffer",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             game->ZBuffer = TRUE;
         else

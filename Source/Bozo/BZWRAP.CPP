@@ -59,6 +59,8 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
+#include "bozo.h"
+
 #include <assert.h>
 #include <ivory.hpp>
 

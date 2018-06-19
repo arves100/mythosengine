@@ -105,7 +105,7 @@ BOOL TesterApp::init_instance()
         {
             if (!ini.read("DisplayDevice",buff))
             {
-                strlwr(buff);
+                _strlwr(buff);
 
                 startup &= ~(STARTUP_DDRAW
                              | STARTUP_D3D);
@@ -120,7 +120,7 @@ BOOL TesterApp::init_instance()
 
             if (!ini.read("FullScreen",buff))
             {
-                strlwr(buff);
+                _strlwr(buff);
                 if (strstr(buff,"no"))
                     startup &= ~STARTUP_FULLSCREEN;
             }

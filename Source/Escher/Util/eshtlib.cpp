@@ -181,7 +181,7 @@ int main(int argc, char *argv[])
                         return 1;
                     }
                     ofn=argv[i];
-                    strlwr(ofn);
+                    _strlwr(ofn);
                     break;
 
                 //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴� Output residual file
@@ -206,7 +206,7 @@ int main(int argc, char *argv[])
                             return 1;
                         }
                         rfn=argv[i];
-                        strlwr(rfn);
+                        _strlwr(rfn);
                     }
                     break;
 
@@ -255,7 +255,7 @@ int main(int argc, char *argv[])
         }
         else
         {
-            fn[fcount++] = strlwr(argv[i]);
+            fn[fcount++] = _strlwr(argv[i]);
         }
     }
 
@@ -318,7 +318,7 @@ int main(int argc, char *argv[])
         cout.flush();
         for(;;)
         {
-            i=getch();
+            i=_getch();
             cout << (char)i << "\n";
 
             if (i == 'Y' || i == 'y' || i == 13)
@@ -351,7 +351,7 @@ int main(int argc, char *argv[])
             cout.flush();
             for(;;)
             {
-                i=getch();
+                i=_getch();
                 cout << (char)i << "\n";
 
                 if (i == 'Y' || i == 'y' || i == 13)
@@ -762,7 +762,7 @@ int dump(XFParseIFF &iff, XFile &xf)
                         cout.flush();
                         for(;;)
                         {
-                            int i=getch();
+                            int i=_getch();
                             cout << (char)i << "\n";
 
                             if (i == 'Y' || i == 'y' || i == 13)

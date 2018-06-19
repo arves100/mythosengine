@@ -52,8 +52,11 @@
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
 
+#include <platform.h>
+
 #include <string.h>
 #include <portable.h>
+#include <Windows.h>
 
 #include "maxevt.hpp"
 #include "maxdevs.hpp"

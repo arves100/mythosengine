@@ -169,7 +169,7 @@ int main(int argc, char *argv[])
                                 return 1;
                             }
                             ofn = argv[i];
-                            strlwr (ofn);
+                            _strlwr (ofn);
                             break;
 
                         case 'h':   // HPP file name
@@ -181,7 +181,7 @@ int main(int argc, char *argv[])
                                 return 1;
                             }
                             hfn = argv[i];
-                            strlwr (hfn);
+                            _strlwr (hfn);
                             break;
 
                         default:
@@ -198,7 +198,7 @@ int main(int argc, char *argv[])
         else if (!ifn)
         {
             ifn=argv[i];
-            strlwr(ifn);
+            _strlwr(ifn);
         }
     }
 

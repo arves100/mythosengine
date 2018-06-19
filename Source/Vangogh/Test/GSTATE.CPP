@@ -110,7 +110,7 @@ GameState::GameState (MaxDevices *d):
         ini.section("Screen");
         if (!ini.read("FullScreen",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 use_fullscreen |= VNGO_SET_RESOLUTION;
@@ -119,7 +119,7 @@ GameState::GameState (MaxDevices *d):
 
         if (!ini.read("TrueFlip",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 use_fullscreen |= VNGO_TRUE_FLIP;
@@ -129,7 +129,7 @@ GameState::GameState (MaxDevices *d):
 #ifdef _MSI
         if (!ini.read("UseMSI",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 screen = new VngoMSI (ClientWndProc);
@@ -139,7 +139,7 @@ GameState::GameState (MaxDevices *d):
 #ifdef _3DFX
         if (!ini.read("Use3DFX",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 screen = new Vngo3Dfx ();
@@ -149,7 +149,7 @@ GameState::GameState (MaxDevices *d):
 #endif
         if (!ini.read("UseD3D",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 screen = new VngoDirect3D (hWndClient);
@@ -158,7 +158,7 @@ GameState::GameState (MaxDevices *d):
         }
         if (!ini.read("UseDirectDraw",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"yes") || strstr(buff,"on"))
             {
                 screen = new VngoDirectDraw (hWndClient);
@@ -167,7 +167,7 @@ GameState::GameState (MaxDevices *d):
 
         if (!ini.read("Resolution",buff))
         {
-            strlwr(buff);
+            _strlwr(buff);
             if (strstr(buff,"640x480"))
             {
                 map_xsize = 640;
@@ -197,7 +197,7 @@ GameState::GameState (MaxDevices *d):
 
         if (!ini.read("Palette",palname))
         {
-            strlwr(palname);
+            _strlwr(palname);
         }
 
         ini.close();

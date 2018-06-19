@@ -354,7 +354,7 @@ void ToolDoc::GetCounts(ulong *ncams,
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
 esch_error_codes ToolDoc::serialize_store_mesh(XFParseIFF *iff, EschMeshDraw *msh)
 {
-    int                 i;
+    ulong                 i;
     EschFileMeshHDR     header;
 
     for(; msh; msh = (EschMeshDraw*)msh->next())
@@ -595,7 +595,7 @@ esch_error_codes ToolDoc::serialize_store_mesh(XFParseIFF *iff, EschMeshDraw *ms
 
             EschFace *tptr = fptr;
             EschFaceV1 *tmpptr = ftemp;
-            for(ulong i=0; i < msh->mesh->nfaces; i++, tptr++, tmpptr++)
+            for(i=0; i < msh->mesh->nfaces; i++, tptr++, tmpptr++)
             {
                 dword flags = tptr->flags;
                 if (tptr->self_illum)
@@ -1631,7 +1631,7 @@ save_error_exit: ;
         MessageBox(NULL,
                    str,"Escher Tool",MB_OK | MB_ICONEXCLAMATION);
 
-        AfxThrowArchiveException(CArchiveException::generic);
+        AfxThrowArchiveException(CArchiveException::genericException);
         return;
         }
     //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ Loading
@@ -1683,7 +1683,7 @@ save_error_exit: ;
         {
             MessageBox(NULL,
                        "Must have a valid Van Gogh palette","Fatal Error",MB_OK | MB_ICONEXCLAMATION);
-            AfxThrowArchiveException(CArchiveException::generic);
+            AfxThrowArchiveException(CArchiveException::genericException);
         }
 
         for(;;)
@@ -1712,7 +1712,7 @@ save_error_exit: ;
 
             if (iff.read(&header))
             {
-                AfxThrowArchiveException(CArchiveException::generic);
+                AfxThrowArchiveException(CArchiveException::genericException);
                 return;
             }
 
@@ -1750,7 +1750,7 @@ save_error_exit: ;
                 {
                     if (iff.read(desc))
                     {
-                        AfxThrowArchiveException(CArchiveException::generic);
+                        AfxThrowArchiveException(CArchiveException::genericException);
                         return;
                     }
                 }
@@ -1760,7 +1760,7 @@ save_error_exit: ;
                 {
                     if (iff.read(auth))
                     {
-                        AfxThrowArchiveException(CArchiveException::generic);
+                        AfxThrowArchiveException(CArchiveException::genericException);
                         return;
                     }
                 }
@@ -1770,7 +1770,7 @@ save_error_exit: ;
                 {
                     if (iff.read(copy))
                     {
-                        AfxThrowArchiveException(CArchiveException::generic);
+                        AfxThrowArchiveException(CArchiveException::genericException);
                         return;
                     }
                 }
@@ -1992,7 +1992,7 @@ load_error_exit: ;
             MessageBox(NULL,
                        str,"Escher Tool",MB_OK | MB_ICONEXCLAMATION);
 
-            AfxThrowArchiveException(CArchiveException::generic);
+            AfxThrowArchiveException(CArchiveException::genericException);
             return;
         }
         }

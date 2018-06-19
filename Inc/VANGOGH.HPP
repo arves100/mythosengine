@@ -43,6 +43,17 @@
 //                                Includes
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
+#ifdef      TEMP_D3D
+#undef      _D3D
+#undef      _TEMP_D3D
+#endif
+
+#ifndef     _D3D
+#define     _D3D
+#define     TEMP_D3D
+#endif
+
+#define D3D_OVERLOADS
 
 #include <portable.h>
 #include <debug.h>

@@ -127,12 +127,12 @@ void main (int argc, char **argv)
 
     cout << "<press any key to stop>" << endl;
 
-    while (!kbhit())
+    while (!_kbhit())
         cout << counter << ' ';
 
     cout << "Time now = " << c.check() << " ms, ("
          << counter << ") iterations" << endl;
-    getch();
+    _getch();
     Chronos.term();
 }
 

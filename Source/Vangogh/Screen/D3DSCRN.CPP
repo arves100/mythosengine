@@ -33,7 +33,7 @@
 // Direct3D
 //
 //อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
-#define D3D_OVERLOADS
+#include "vangogh.hpp"
 
 #include <stdio.h>
 #include <string.h>
@@ -43,18 +43,7 @@
 #include "debug.h"
 #include "portable.h"
 
-#ifndef     _D3D
-#define     _D3D
-#define     TEMP_D3D
-#endif
-
-#include "vangogh.hpp"
 #include "vngscrn.hpp"
-
-#ifdef      TEMP_D3D
-#undef      _D3D
-#undef      _TEMP_D3D
-#endif
 
 // #define RENDER_FRONT
 

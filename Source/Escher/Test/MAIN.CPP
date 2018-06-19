@@ -180,7 +180,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("AllowAMD3D",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
         {
             esys->enable_amd3d();
@@ -208,7 +208,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("TerrainSystem",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"new"))
             mode->use_new_terrain = TRUE;
     }
@@ -216,14 +216,14 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("PartitionTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (!mode->SetupPartitionTest(buff))
             return FALSE;
     }
 
     if (!ini.read("FireTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
         {
             if (!mode->SetupFireTest())
@@ -233,14 +233,14 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("MultiTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (!mode->SetupMultiTest(buff))
             return FALSE;
     }
 
     if (!ini.read("Sprite",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (!mode->SetupSprite(buff))
             return FALSE;
     }
@@ -282,7 +282,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
     }
     if (!ini.read("ParticleAccel",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"nonlinear"))
             mode->part_linear=0;
     }
@@ -304,14 +304,14 @@ int APIENTRY WinMain (HINSTANCE hInstance,
     }
     if (!ini.read("ParticleSystem",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (!mode->SetupParticleSystem(buff))
             return FALSE;
     }
 
     if (!ini.read("Starfield",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             if (!mode->SetupStarfield((strstr(buff,"ftl")) ? TRUE : FALSE,
                                       (strstr(buff,"brights")) ? TRUE : FALSE))
@@ -320,7 +320,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("Explosion",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
         {
             if (!mode->SetupExplosion(buff))
@@ -330,28 +330,28 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("Metabox",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (!mode->SetupMetabox(buff))
             return FALSE;
     }
 
     if (!ini.read("Plane",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (!mode->SetupPlane(buff))
             return FALSE;
     }
 
     if (!ini.read("PickTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             mode->pick_test = TRUE;
     }
 
     if (!ini.read("CollideTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (strstr(buff,"yes") || strstr(buff,"on"))
             mode->collide_test = TRUE;
     }
@@ -381,7 +381,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
     if (!ini.read("AnimationTest",buff))
     {
-        strlwr(buff);
+        _strlwr(buff);
         if (!mode->SetupAnimation(buff))
             return FALSE;
         mode->keyframe_animation = TRUE;

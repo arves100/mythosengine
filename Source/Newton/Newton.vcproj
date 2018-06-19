@@ -41,11 +41,14 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				SmallerTypeCheck="true"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="NEWTON.HPP"
 				WarningLevel="3"
 				DebugInformationFormat="4"
 			/>
@@ -111,8 +114,11 @@
 				EnableFiberSafeOptimizations="true"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="NEWTON.HPP"
 				WarningLevel="3"
 				DebugInformationFormat="3"
 			/>
@@ -177,8 +183,11 @@
 				EnableFiberSafeOptimizations="true"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
+				UsePrecompiledHeader="1"
+				PrecompiledHeaderThrough="NEWTON.HPP"
 				WarningLevel="3"
 				DebugInformationFormat="3"
 			/>
@@ -237,6 +246,18 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath="..\..\Inc\NEWTMATH.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\NEWTMATH.INC"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\NEWTON.HPP"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"

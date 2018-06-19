@@ -211,7 +211,7 @@ void main ()
         }
 
         // Empty the keyboard buffer
-        while (kbhit()) getch();
+        while (_kbhit()) _getch();
     }
     evt.uninstall();
     cout << "All done!" << endl;

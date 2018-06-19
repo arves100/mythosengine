@@ -34,7 +34,7 @@
  ---------------------------------------------------------------------------
  SETUP
  
- Define any _WIN32_WINNT version major or greater than Windows 98 to enable
+ Define any _WIN32_WINNT version equal or greater than Windows 2000 to enable
  extensive support for that platform. (Source officially uses Windows XP
  (0x501) target)
  

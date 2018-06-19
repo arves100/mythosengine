@@ -252,7 +252,7 @@ void main(int argc, char *argv[])
                     }
                     Flags |= FLAGS_OUTPUT;
                     outfn=argv[i];
-                    strlwr(outfn);
+                    _strlwr(outfn);
                     break;
 
                 //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴� Name
@@ -280,7 +280,7 @@ void main(int argc, char *argv[])
         }
         else if (!fn)
         {
-            fn=strlwr(argv[i]);
+            fn=_strlwr(argv[i]);
         }
     }
 

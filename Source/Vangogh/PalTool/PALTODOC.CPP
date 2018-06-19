@@ -269,7 +269,7 @@ save_error_exit: ;
         MessageBox(NULL,
                    str,"Palette Tool",MB_OK | MB_ICONEXCLAMATION);
 
-        AfxThrowArchiveException(CArchiveException::generic);
+        AfxThrowArchiveException(CArchiveException::genericException);
         return;
         }
     //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴� Loading
@@ -321,7 +321,7 @@ save_error_exit: ;
 
                     if (iff.read(name))
                     {
-                        AfxThrowArchiveException(CArchiveException::generic);
+                        AfxThrowArchiveException(CArchiveException::genericException);
                         return;
                     }
                 }
@@ -332,7 +332,7 @@ save_error_exit: ;
                 {
                     if (iff.read(desc))
                     {
-                        AfxThrowArchiveException(CArchiveException::generic);
+                        AfxThrowArchiveException(CArchiveException::genericException);
                         return;
                     }
                 }
@@ -342,7 +342,7 @@ save_error_exit: ;
                 {
                     if (iff.read(auth))
                     {
-                        AfxThrowArchiveException(CArchiveException::generic);
+                        AfxThrowArchiveException(CArchiveException::genericException);
                         return;
                     }
                 }
@@ -352,7 +352,7 @@ save_error_exit: ;
                 {
                     if (iff.read(copy))
                     {
-                        AfxThrowArchiveException(CArchiveException::generic);
+                        AfxThrowArchiveException(CArchiveException::genericException);
                         return;
                     }
                 }
@@ -472,7 +472,7 @@ save_error_exit: ;
                            "Needed data missing",
                            "Palette Tool",MB_OK | MB_ICONEXCLAMATION);
 
-                AfxThrowArchiveException(CArchiveException::generic);
+                AfxThrowArchiveException(CArchiveException::genericException);
             }
 
             //컴 Return OK
@@ -491,7 +491,7 @@ save_error_exit: ;
             MessageBox(NULL,
                        str,"Palette Tool",MB_OK | MB_ICONEXCLAMATION);
 
-            AfxThrowArchiveException(CArchiveException::generic);
+            AfxThrowArchiveException(CArchiveException::genericException);
             return;
         }
         }

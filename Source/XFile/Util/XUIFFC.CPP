@@ -164,12 +164,12 @@ void main(int argc, char *argv[])
         else if (!ifn)
         {
             ifn=argv[i];
-            strlwr(ifn);
+            _strlwr(ifn);
         }
         else if (!ofn)
         {
             ofn=argv[i];
-            strlwr(ofn);
+            _strlwr(ofn);
         }
     }
 

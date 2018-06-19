@@ -46,12 +46,12 @@
 //                                Includes
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
-#define DIRECTINPUT_VERSION 0x0600
+
+#include <Max.hpp>
 
 #include <assert.h>
 #include <string.h>
 
-#define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 
 #include <ivory.hpp>

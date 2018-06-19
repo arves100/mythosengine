@@ -178,6 +178,8 @@ public:
 
 void *operator new (size_t size, IvoryArena *arena);
 void *operator new (size_t size, IvorySubAlloc *arena);
+void operator delete (void* ptr, IvoryArena* arena);
+void operator delete (void* ptr, IvorySubAlloc* arena);
 
 #include "ivory.ipp"
 

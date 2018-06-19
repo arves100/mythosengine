@@ -39,6 +39,8 @@
 //                                Includes
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
+#include "vangogh.hpp"
+
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,7 +49,6 @@
 #include "debug.h"
 #include "portable.h"
 #include "ivory.h"
-#include "vangogh.hpp"
 #include "xfile.hpp"
 
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�

@@ -128,7 +128,7 @@ BOOL ToolApp::InitInstance()
 
         // Standard initialization
 
-        Enable3dControls();
+        //Enable3dControls();
 
         LoadStdProfileSettings();  // Load standard INI file options (including MRU)
 

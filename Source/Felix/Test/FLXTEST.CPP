@@ -162,7 +162,7 @@ void main()
 
 
    printf("Hit any key to begin Benchmark Timings.\n");
-   getch();
+   _getch();
    start=clock();
    int i,j;
    ticks=0;

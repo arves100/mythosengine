@@ -41,6 +41,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				SmallerTypeCheck="true"
@@ -111,6 +112,7 @@
 				EnableFiberSafeOptimizations="true"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -177,6 +179,7 @@
 				EnableFiberSafeOptimizations="true"
 				WholeProgramOptimization="true"
 				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -333,6 +336,38 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath="..\..\Inc\XFBASE.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\XFBITMAP.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\xfdefs.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\XFDEFS.INC"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\XFIFF.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\XFILE.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\XFINI.HPP"
+				>
+			</File>
+			<File
+				RelativePath="..\..\Inc\XFIO.H"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"

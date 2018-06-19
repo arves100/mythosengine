@@ -42,6 +42,7 @@
 //                                Includes
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
+#include <bozo.h>
 
 #include <stdio.h>
 #include <stdlib.h>
