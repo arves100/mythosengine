@@ -201,11 +201,18 @@ BOOL TesterApp::init_instance()
 //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
 int TesterApp::exit_instance()
 {
+
     if (start)
     {
         delete start;
         start = 0;
     }
+
+	if (sim)
+	{
+		delete sim;
+		sim = 0;
+	}
 
     return SimGine::exit_instance();
 }

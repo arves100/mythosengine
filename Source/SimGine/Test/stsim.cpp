@@ -198,6 +198,12 @@ void TesterUI::deactivate()
         delete evt;
         evt = 0;
     }
+	
+	if (view1 == view)
+		view = NULL;
+	if (view2 == view)
+		view = NULL;
+
     if (view1)
     {
         delete view1;
