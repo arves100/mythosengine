@@ -35,6 +35,13 @@
 
 #if defined(_WINDOWS) || defined(__WIN32__) || defined(_WIN32) || defined(WIN32) || defined(WINDOWS)
 
+#ifdef _DEBUG
+#ifndef _CRTDBG_MAP_ALLOC
+#define _CRTDBG_MAP_ALLOC
+#endif /* !_CRTDBG_MAP_ALLOC */
+#include <vld.h>
+#endif /* _DEBUG */
+
 #if defined(WIN64) || defined(_WIN64)
 #error "Nynthon does not support 64-bit builds"
 #endif /* !WIN64 */
