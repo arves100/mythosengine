@@ -42,8 +42,7 @@
 //                                Includes
 //
 //같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같같�
-
-#define _WIN32_WINNT 0x501 //Windows XP
+#include <platform.h>
 
 #include <afxwin.h>         // MFC core and standard components
 #include <afxext.h>         // MFC extensions

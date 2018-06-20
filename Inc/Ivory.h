@@ -54,7 +54,9 @@
 
 #include <platform.h>
 
+#ifndef _AFXDLL
 #include <Windows.h>
+#endif
 
 #ifdef __cplusplus
 extern "C" {
