@@ -156,7 +156,7 @@ bool MaxMouse::is_present () const
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 //  set_extents                                                             ³
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-void MaxMouse::set_extents (short x, short y)
+void MaxMouse::set_extents (LONG x, LONG y)
 {
     max_x = x;
     max_y = y;
@@ -210,7 +210,7 @@ void MaxMouseWin32::show_cursor (bool on)
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 //  get_pos                                                                 ³
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-void MaxMouseWin32::get_pos (short *mx, short *my) const
+void MaxMouseWin32::get_pos (LONG *mx, LONG *my) const
 {
     assert (mx && my);
 
@@ -223,15 +223,15 @@ void MaxMouseWin32::get_pos (short *mx, short *my) const
     if (pt.y > max_y)
         pt.y = max_y;
 
-    *mx = short (pt.x);
-    *my = short (pt.y);
+    *mx = pt.x;
+    *my = pt.y;
 }
 
 
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 //  set_pos                                                                 ³
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-void MaxMouseWin32::set_pos (short _mx, short _my)
+void MaxMouseWin32::set_pos (LONG _mx, LONG _my)
 {
     if (_mx > max_x)
         _mx = max_x;
@@ -263,12 +263,12 @@ byte MaxMouseWin32::get_buttons () const
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 //  get_movement                                                            ³
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-void MaxMouseWin32::get_movement (short *dx, short *dy)
+void MaxMouseWin32::get_movement (LONG *dx, LONG *dy)
 {
     assert (dx && dy);
 
     // Get the current mouse position
-    short   mx, my;
+    LONG   mx, my;
     get_pos (&mx, &my);
 
     // Calculate the delta from the last position
@@ -510,7 +510,7 @@ void MaxMouseDirectX::show_cursor (bool on)
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 //  get_pos                                                                 ³
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-void MaxMouseDirectX::get_pos (short *mx, short *my) const
+void MaxMouseDirectX::get_pos (LONG *mx, LONG *my) const
 {
     assert (mx && my);
 
@@ -525,14 +525,14 @@ void MaxMouseDirectX::get_pos (short *mx, short *my) const
         if (pt.y > max_y)
             pt.y = max_y;
 
-        *mx = short (pt.x);
-        *my = short (pt.y);
+        *mx = pt.x;
+        *my = pt.y;
     }
     else
     {
         // This should have been clipped into something sane....
-        *mx = short (xpos);
-        *my = short (ypos);
+        *mx = xpos;
+        *my = ypos;
     }
 }
 
@@ -540,7 +540,7 @@ void MaxMouseDirectX::get_pos (short *mx, short *my) const
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 //  set_pos                                                                 ³
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-void MaxMouseDirectX::set_pos (short _mx, short _my)
+void MaxMouseDirectX::set_pos (LONG _mx, LONG _my)
 {
     if (_mx > max_x)
         _mx = max_x;
@@ -576,12 +576,12 @@ byte MaxMouseDirectX::get_buttons () const
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
 //  get_movement                                                            ³
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
-void MaxMouseDirectX::get_movement (short *dx, short *dy)
+void MaxMouseDirectX::get_movement (LONG *dx, LONG *dy)
 {
     assert (dx && dy);
 
-    *dx = short (state.lX);
-    *dy = short (state.lY);
+    *dx = state.lX;
+    *dy = state.lY;
 }
 
 

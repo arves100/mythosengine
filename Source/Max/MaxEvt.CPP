@@ -307,7 +307,7 @@ int MaxTrigger::check (const MaxDevices &devs) const
     }
 
     // Now, check the mouse
-    short   mx, my, dx, dy;
+    LONG   mx, my, dx, dy;
 
     devs.get_mouse_pos (&mx, &my);
     devs.get_mouse_movement (&dx, &dy);

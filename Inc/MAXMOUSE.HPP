@@ -96,10 +96,10 @@ protected:
     //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
     // Private Data
     //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
-    short   last_x;
-    short   last_y;
-    short   max_x;
-    short   max_y;
+    LONG   last_x;
+    LONG   last_y;
+    LONG   max_x;
+    LONG   max_y;
     bool    initialized;
 
 public:
@@ -124,15 +124,15 @@ public:
     virtual void update();
 
     virtual void show_cursor (bool) = 0;
-    virtual void get_pos (short *mx, short *my) const = 0;
-    virtual void set_pos (short _mx, short _my) = 0;
-    virtual void get_movement (short *dx, short *dy) = 0;
+    virtual void get_pos (LONG *mx, LONG *my) const = 0;
+    virtual void set_pos (LONG _mx, LONG _my) = 0;
+    virtual void get_movement (LONG *dx, LONG *dy) = 0;
     virtual byte get_buttons() const = 0;   // bits 0,1,2 button up/down
                                             // bits 4,5,6 button dblclick status.
     virtual bool is_present () const;
 
     bool is_initialized () const { return initialized; }
-    void set_extents (short, short);
+    void set_extents (LONG, LONG);
 };
 
 
@@ -154,9 +154,9 @@ public:
     virtual int  init ();
 
     virtual void show_cursor (bool);
-    virtual void get_pos (short *mx, short *my) const;
-    virtual void set_pos (short _mx, short _my);
-    virtual void get_movement (short *dx, short *dy);
+    virtual void get_pos (LONG *mx, LONG *my) const;
+    virtual void set_pos (LONG _mx, LONG _my);
+    virtual void get_movement (LONG *dx, LONG *dy);
     virtual byte get_buttons() const;    // bits 0,1,2 button up/down
                                          // bits 4,5,6 button dblclick status.
 };
@@ -199,9 +199,9 @@ public:
     virtual void update();
 
     virtual void show_cursor (bool);
-    virtual void get_pos (short *mx, short *my) const;
-    virtual void set_pos (short _mx, short _my);
-    virtual void get_movement (short *dx, short *dy);
+    virtual void get_pos (LONG *mx, LONG *my) const;
+    virtual void set_pos (LONG _mx, LONG _my);
+    virtual void get_movement (LONG *dx, LONG *dy);
     virtual byte get_buttons() const;    // bits 0,1,2 button up/down
                                          // bits 4,5,6 button dblclick status.
     virtual bool is_present () const;

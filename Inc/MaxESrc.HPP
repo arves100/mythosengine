@@ -176,9 +176,9 @@ public:
         MaxEventList process (const MaxEventList & = MaxEventList (1));
 
         // Support the virtual devices with physical ones!
-        void get_mouse_movement (short *, short *) const;
-        void get_mouse_pos (short *, short *) const;
-        void set_mouse_pos (short, short);
+        void get_mouse_movement (LONG *, LONG *) const;
+        void get_mouse_pos (LONG *, LONG *) const;
+        void set_mouse_pos (LONG, LONG);
         byte get_mouse_buttons () const;
         int  check_key (int) const;
         void get_joystick (JOYINFOEX *) const;
@@ -219,7 +219,7 @@ inline int MaxEventUser::EventBinding::operator == (const EventBinding &bind) co
 //  MaxEventUser::get_mouse_movement
 //
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-inline void MaxEventUser::get_mouse_movement (short *dx, short *dy) const
+inline void MaxEventUser::get_mouse_movement (LONG *dx, LONG *dy) const
 {
     theDevices.get_mouse_movement (dx, dy);
 }
@@ -229,7 +229,7 @@ inline void MaxEventUser::get_mouse_movement (short *dx, short *dy) const
 //  MaxEventUser::get_mouse_pos
 //
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-inline void MaxEventUser::get_mouse_pos (short *x, short *y) const
+inline void MaxEventUser::get_mouse_pos (LONG *x, LONG *y) const
 {
     theDevices.get_mouse_pos (x, y);
 }
@@ -239,7 +239,7 @@ inline void MaxEventUser::get_mouse_pos (short *x, short *y) const
 //  MaxEventUser::set_mouse_pos
 //
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-inline void MaxEventUser::set_mouse_pos (short x, short y)
+inline void MaxEventUser::set_mouse_pos (LONG x, LONG y)
 {
     theDevices.set_mouse_pos (x, y);
 }

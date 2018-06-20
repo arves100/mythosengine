@@ -306,7 +306,7 @@ int MaxDevices::enable_joystick (int enabled)
 //  MaxDevices::get_mouse_movement
 //
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-void MaxDevices::get_mouse_movement (short *mdx, short *mdy) const
+void MaxDevices::get_mouse_movement (LONG *mdx, LONG *mdy) const
 {
     *mdx = snapshot_mdx;
     *mdy = snapshot_mdy;
@@ -317,7 +317,7 @@ void MaxDevices::get_mouse_movement (short *mdx, short *mdy) const
 //  MaxDevices::get_mouse_pos
 //
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-void MaxDevices::get_mouse_pos (short *mx, short *my) const
+void MaxDevices::get_mouse_pos (LONG *mx, LONG *my) const
 {
     *mx = snapshot_mx;
     *my = snapshot_my;
@@ -328,7 +328,7 @@ void MaxDevices::get_mouse_pos (short *mx, short *my) const
 //  MaxDevices::set_mouse_pos
 //
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-void MaxDevices::set_mouse_pos (short mx, short my)
+void MaxDevices::set_mouse_pos (LONG mx, LONG my)
 {
     if (theMouse)
         theMouse->set_pos (snapshot_mx = mx,
@@ -494,16 +494,29 @@ MaxDevicesWin32::~MaxDevicesWin32()
 //  MaxDevicesDirectX Constructor
 //
 //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-MaxDevicesDirectX::MaxDevicesDirectX (HWND _hwnd):
+MaxDevicesDirectX::MaxDevicesDirectX (HWND _hwnd, HINSTANCE hInstance):
     MaxDevices (),
     hwndClient (_hwnd),
     pdi (0)
 {
-    if (DirectInputCreate ((HMODULE)GetWindowLong (_hwnd, GWL_HINSTANCE),
+	if (!hInstance)
+		hInstance = (HMODULE)GetWindowLong (_hwnd, GWL_HINSTANCE);
+
+	HRESULT hr = DirectInputCreate (hInstance,
                            DIRECTINPUT_VERSION,
                            &pdi,
-                           NULL) != DI_OK)
-        pdi = 0;
+                           NULL);
+	
+	if (hr == DIERR_BETADIRECTINPUTVERSION)
+		pdi = 0;
+	if (hr == DIERR_INVALIDPARAM)
+		pdi = 0;
+	if (hr == DIERR_OUTOFMEMORY)
+		pdi = 0;
+	if (hr == DIERR_OLDDIRECTINPUTVERSION)
+		pdi = 0;
+	if (hr != DI_OK)
+		pdi = 0;
 
     if (pdi)
     {

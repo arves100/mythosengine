@@ -114,10 +114,10 @@ protected:
     //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
 
     // Mouse state info
-    short   snapshot_mx;
-    short   snapshot_my;
-    short   snapshot_mdx;
-    short   snapshot_mdy;
+    LONG   snapshot_mx;
+    LONG   snapshot_my;
+    LONG   snapshot_mdx;
+    LONG   snapshot_mdy;
     byte    snapshot_mbuttons;
 
     // Joystick state info
@@ -149,9 +149,9 @@ public:
     virtual void wm_clear ();
 
     // Values for the devices
-    virtual void get_mouse_movement (short *, short *) const;
-    virtual void get_mouse_pos (short *, short *) const;
-    virtual void set_mouse_pos (short, short);
+    virtual void get_mouse_movement (LONG *, LONG *) const;
+    virtual void get_mouse_pos (LONG *, LONG *) const;
+    virtual void set_mouse_pos (LONG, LONG);
     virtual byte get_mouse_buttons () const;
 
     // Keyboard device
@@ -228,7 +228,7 @@ public:
     //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
     // Construtor/Destructor
     //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
-    MaxDevicesDirectX (HWND);
+    MaxDevicesDirectX (HWND _hwnd, HINSTANCE hInstance = NULL);
     virtual ~MaxDevicesDirectX();
 
     //ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
