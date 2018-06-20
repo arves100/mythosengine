@@ -62,7 +62,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dsound.lib Winmm.lib ddraw.lib d3dx.lib dxguid.lib dinput.lib"
+				AdditionalDependencies="dsound.lib Winmm.lib ddraw.lib d3dx.lib psapi.lib dxguid.lib dinput.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.exe"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
@@ -150,7 +150,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dsound.lib Winmm.lib ddraw.lib d3dx.lib dxguid.lib dinput.lib"
+				AdditionalDependencies="dsound.lib Winmm.lib ddraw.lib d3dx.lib psapi.lib dxguid.lib dinput.lib"
 				OutputFile="$(OutDir)\$(ProjectName)r.exe"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
@@ -238,7 +238,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dsound.lib Winmm.lib ddraw.lib d3dx.lib dxguid.lib dinput.lib"
+				AdditionalDependencies="dsound.lib Winmm.lib ddraw.lib d3dx.lib psapi.lib dxguid.lib dinput.lib"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="false"
 				AssemblyDebug="2"

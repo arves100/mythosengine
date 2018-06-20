@@ -139,10 +139,11 @@ void low_level()
    {
        ulong   result;
        char    data[128];
+	   char	   pFileName[MAX_PATH+1];
 
-       cout << "File created as " << fname << ".\n";
-
-       result=xf_write(fhandle,"Test String\n",sizeof("Test String\n") );
+	   cout << "File created as " << fname << ".\n";
+       
+	   result=xf_write(fhandle,"Test String\n",sizeof("Test String\n") );
 
        if (result != sizeof("Test String\n"))
            print_error("Failed to write string");
@@ -151,10 +152,19 @@ void low_level()
 
        cout << "Current file position: " << xf_seek(fhandle,1,0) << "\n";
 
+	   if (xf_getname(fhandle, pFileName, sizeof(pFileName)) != pFileName)
+	   {
+			print_error("Cannot get file path");
+	   }
+	   else
+	   {
+			cout << "File path is " << pFileName << ".\n";
+	   }
+
        xf_flush(fhandle);
        xf_close(fhandle);
 
-       fhandle=xf_open(fname,XF_OPEN_READ);
+	   fhandle=xf_open(pFileName[0] == '\0' ? fname : pFileName,XF_OPEN_READ);
        if (fhandle == INVALID_HANDLE_VALUE)
        {
            print_error("Failed to open file");

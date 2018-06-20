@@ -39,6 +39,15 @@
 
 #include <assert.h>
 #include <xfio.h>
+#include <Strsafe.h>
+
+#if _WIN32_WINNT >= 0x600
+#include <Psapi.h>
+
+#if PSAPI_VERSION >= 2
+#define GetMappedFileName K32GetMappedFileName
+#endif /* PSAPI_VERSION */
+#endif /* _WIN32_WINNT */
 
 //±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
 //
@@ -167,5 +176,101 @@ ulong xf_setsize (HANDLE fhandle, ulong size)
     return (ulong)-1;
 }
 
-//°±² End of module - xfiofinf.c ²±°
 
+//ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+// const char* xf_getname(HANDLE fhandle, char* pReturn, size_t pReturnSize);  ³
+//                                                                             ³
+// Get the file name of an handle.                                             ³
+//                                                                             ³
+// Returns pReturn or NULL if error                                            ³
+//ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+const char* xf_getname(HANDLE fhandle, char* pReturn, size_t pReturnSize)
+{
+#if _WIN32_WINNT < 0x600
+	BOOL bSuccess = FALSE;
+	HANDLE hFileMap = 0;
+	void* pMem = 0;
+
+	if (fhandle == NULL)
+		return NULL;
+
+	if (pReturn == NULL || pReturnSize < 1)
+		return NULL;
+
+	if (xf_getsize(fhandle) < 1)
+		return NULL;
+	
+	hFileMap = CreateFileMapping(fhandle, NULL, PAGE_READONLY, 0, 1, NULL);
+	if (hFileMap)
+	{
+		pMem = MapViewOfFile(hFileMap, FILE_MAP_READ, 0, 0, 1);
+		if (pMem)
+		{
+			if (GetMappedFileName(GetCurrentProcess(), pMem, pReturn, pReturnSize))
+			{
+				TCHAR szTemp[512];
+				szTemp[0] = '\0';
+
+				if (GetLogicalDriveStrings(511, szTemp))
+				{
+					TCHAR szName[MAX_PATH];
+					TCHAR szDrive[3] = TEXT(" :");
+					BOOL bFound = FALSE;
+					TCHAR* p = szTemp;
+
+					do
+					{
+						*szDrive = *p;
+						if (QueryDosDevice(szDrive, szName, MAX_PATH))
+						{
+							size_t uNameLen = strlen(szName);
+							if (uNameLen < MAX_PATH)
+							{
+								bFound = _strnicmp(pReturn, szName, uNameLen) == 0
+										&& *(pReturn + uNameLen) == '\\';
+
+								if (bFound)
+								{
+									TCHAR szTempFile[MAX_PATH];
+
+									StringCchPrintf(szTempFile, MAX_PATH, TEXT("%s%s"), szDrive, pReturn+uNameLen);
+									StringCchCopyN(pReturn, MAX_PATH+1, szTempFile, strlen(szTempFile));
+								}
+							}
+						}
+
+						while (*p++);
+					} while (!bFound && *p);
+				}
+			}
+
+			bSuccess = TRUE;
+
+			UnmapViewOfFile(pMem);
+		}
+
+		CloseHandle(hFileMap);
+	}
+	
+	if (bSuccess)
+		return pReturn;
+
+	xf_last_error = GetLastError();
+
+	return NULL;
+#else
+	size_t ps = 0, i = 0;
+
+	// Windows Vista or later code
+	if (GetFinalPathNameByHandle(fhandle, pReturn, pReturnSize, FILE_NAME_NORMALIZED) == 0)
+	{
+		xf_last_error = GetLastError();
+		return NULL;
+	}
+
+	return pReturn;
+#endif
+}
+
+//°±² End of module - xfiofinf.c ²±°

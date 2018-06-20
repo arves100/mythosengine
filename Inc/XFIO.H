@@ -109,6 +109,8 @@ ulong xf_setsize (HANDLE hFile, ulong size);
 word xf_getfdate (HANDLE hFile);
 word xf_getftime (HANDLE hFile);
 
+const char* xf_getname(HANDLE fhandle, char* pReturn, size_t pReturnSize);
+
 
 //컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�
 // Utility routines for DOS file operations                                 �

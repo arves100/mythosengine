@@ -62,6 +62,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="psapi.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.exe"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
@@ -146,6 +147,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="psapi.lib"
 				OutputFile="$(OutDir)\$(ProjectName)r.exe"
 				GenerateDebugInformation="true"
 				AssemblyDebug="2"
@@ -230,6 +232,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="psapi.lib"
 				GenerateDebugInformation="false"
 				AssemblyDebug="2"
 				ProgramDatabaseFile=""

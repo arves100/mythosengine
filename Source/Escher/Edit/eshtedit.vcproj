@@ -82,7 +82,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="Winmm.lib"
+				AdditionalDependencies="Winmm.lib psapi.lib"
 				OutputFile="$(OutDir)\$(ProjectName)r.exe"
 				Version=""
 				LinkIncremental="1"
@@ -190,7 +190,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="Winmm.lib"
+				AdditionalDependencies="Winmm.lib psapi.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.exe"
 				Version=""
 				LinkIncremental="2"
@@ -301,7 +301,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="Winmm.lib"
+				AdditionalDependencies="Winmm.lib psapi.lib"
 				OutputFile="$(OutDir)\$(ProjectName).exe"
 				Version=""
 				LinkIncremental="1"

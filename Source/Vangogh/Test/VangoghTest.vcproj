@@ -61,7 +61,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib ddraw.lib"
+				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib ddraw.lib psapi.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.exe"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
@@ -147,7 +147,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib ddraw.lib"
+				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib ddraw.lib psapi.lib"
 				OutputFile="$(OutDir)\$(ProjectName)r.exe"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
@@ -233,7 +233,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib ddraw.lib"
+				AdditionalDependencies="dinput.lib Winmm.lib dxguid.lib ddraw.lib psapi.lib"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="false"
 				AssemblyDebug="2"
