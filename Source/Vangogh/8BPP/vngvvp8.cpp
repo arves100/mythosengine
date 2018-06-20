@@ -276,7 +276,7 @@ void VngoVVport8::reset(dword c,dword farz)
     trect.dx = vbuff.width;
     trect.dy = vbuff.height;
 
-    assert(lock_status);
+    assert(lock_status==1);
 
     dword           t;
 
