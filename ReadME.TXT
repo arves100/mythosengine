@@ -28,16 +28,15 @@
  Select Start/Run... and select 'setup.exe'.  Follow the instructions
  given in the setup program.
 
- To build the code, you will need Windows 98 Platform SDK (1998) or,
- at your option, any later SDK that supports DirectX 6 or later.
+ To build the code, you will need Windows 2000 Platform SDK (2001) or,
+ at your option, any later SDK that supports DirectX 6.1A or later.
 
  ---------------------------------------------------------------------------
  SETUP
  
  Define any _WIN32_WINNT version equal or greater than Windows 2000 to enable
- extensive support for that platform. (Source officially uses Windows XP
- (0x501) target)
- 
+ extensive support for that platform.
+  
  You can enable deprectad support for DirectX 6 by editing the macro
  DIRECTX_TARGET_VERSION in "Platform.h" header
 
@@ -274,22 +273,16 @@
 
     README.TXT's are in each of the library component directories with
     current status and work notes.
+	
+	See UpdatingFromMythos95.txt for a quick guide on upgrading your game
+	from MythOS95 to NynthonEngine.
 
-    This version of NynthonEngine was built with Microsoft Visual C++ v9.0.
-	 (Microsoft Visual Studio 2008) with DirectX 7 SDK with Multithreaded DLL support (MD)
-
-    MFC Version 6.x support DLLs are installed as part of the NynthonEngine
-    installation procedure since they are required by the MFC-based tools.
-
-    Several of the utilities require a PD utility, Flex, which must be 
-    located in C:\FLEX in order to build the executable.  Unzip the FLEX.ZIP
-    contained in the root directory of the installed tree structure into
-    C:\FLEX (must be this directory!) and put C:\FLEX in your path.
+    This version of NynthonEngine was built with Microsoft Visual C++ v9.0/Visual Studio 2008
+	with DirectX 7 SDK and Multithreaded DLL support (MD).
 
     A 3D Studio MAX exporter was planned, but has not been completed.
     If time permits, Chuck will try to complete at least a basic
     exporter for 3DS MAX.
-
       
     
  ---------------------------------------------------------------------------
@@ -300,12 +293,12 @@
 
     The Viewer example is a simple object viewer with interactive controls
     simliar to the Microsoft Direct3D Viewer sample.  This is a great
-    place to see how to handle all of the initialization issues for MythOS
+    place to see how to handle all of the initialization issues for NynthonEngine
     and how to respond to various error conditions.
 
     The second example, Lunar Lander, was previously the GameFrame
     example and has been converted over to use the SimGine framework.  It
-    makes use of more of the 2D and support functionality of MythOS.
+    makes use of more of the 2D and support functionality of NynthonEngine.
 
     Script, our third example, is a simple scripting system for creating,
     modifying, and animating cameras, lights, meshes, and particle
@@ -355,28 +348,30 @@
  ---------------------------------------------------------------------------
  PROBLEMS/BUGS
 
-    This library is provided on an "as-is" basis and no supported is
-    provided.  Any future releases or bug-fixes will be posted to the
-    MythOS Home Page (http://www.mythos-engine.org/).
-
-    Send comments and suggestions to mythos@mythos-engine.org.  Bug
-    reports should be sent to mythos_bugs@mythos-engine.org.
-
+    Send comments, suggestions and bugs using GitLab's Issue page.
+	
+	Current workaround (as of git: )
+		BUG: IvoryTest multiple arena allocation fails
+		BUG: XFileTest fails multiple IO tests.
+		ISSUE: XFileTest contains about 7 memory leaks
+		ISSUE: TurnerTest not tested
+		BUG: EscherTest input isn't workings
+		BUG: MaxTest dosen't work
+		BUG: Escher render in MFC applications seems not working
+		BUG: BozoTest fails. Queue not passed correctly.
+		ISSUE: LLander example isn't tested with DirectPlay functionality.
 
  ---------------------------------------------------------------------------
  FUTURE RELEASES
 
-    The MythOS 95 library set represents a technology base started in 1994
-    for use in Charybdis' first title.  We had plans for the development
-    of a new 2.0 version of the library to provide a major rewrite of the
-    graphics libraries (Van Gogh and Escher) to update for the shift
-    to 3D graphics consumer hardware from software-based rendering
-    on 486 class computers.  This version was to be called "MythOS 98".
-
-    We are not making any commitments for a future version, but there are
-    a number of plans which may or may not materialize.  Any such work
-    will take place on a part-time basis and would hopefully be released
-    using the same Open Source license.  The new version would be a major
-    rewrite and would not be compatable with MythOS 95.
-
+    Nynthon Engine is currently work in progress, there are sever features planned
+	that will break the old compatibility with MythOS95.
+	
+	Planned features:
+		[ ] Passing all tests on modern computers
+		[ ] Fixing all memory leaks and runtime problems
+		[ ] Upgrade to DirectX 7
+		[ ] Add multiple devices support
+		[ ] Fully upgrade to Windows 2000
+		
 END OF DOCUMENT

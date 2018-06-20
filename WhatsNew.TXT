@@ -1,22 +1,31 @@
-		 .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
-		/==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
-		|==|, \/ /, / /==/- / /=/_ /  |==|, \/ /, / \==\.-.  - ,-./ |==|_ ||=|, |  /==/_,  ,  - \  |==|, \/ /, / 
-		|==|-  \|  |  \==\, \/=/. /   |==|-  \|  |   `--`\==\- \    |==| ,|/=| _| |==|   .=.     | |==|-  \|  |  
-		|==| ,  | -|   \==\  \/ -/    |==| ,  | -|        \==\_ \   |==|- `-' _ | |==|_ : ;=:  - | |==| ,  | -|  
-		|==| -   _ |    |==|  ,_/     |==| -   _ |        |==|- |   |==|  _     | |==| , '='     | |==| -   _ |  
-		|==|  /\ , |    \==\-, /      |==|  /\ , |        |==|, |   |==|   .-. ,\  \==\ -    ,_ /  |==|  /\ , |  
-		/==/, | |- |    /==/._/       /==/, | |- |        /==/ -/   /==/, //=/  |   '.='. -   .'   /==/, | |- |  
-		`--`./  `--`    `--`-`        `--`./  `--`        `--`--`   `--`-' `-`--`     `--`--''     `--`./  `--`  
+ .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
+/==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
+|==|, \/ /, / /==/- / /=/_ /  |==|, \/ /, / \==\.-.  - ,-./ |==|_ ||=|, |  /==/_,  ,  - \  |==|, \/ /, / 
+|==|-  \|  |  \==\, \/=/. /   |==|-  \|  |   `--`\==\- \    |==| ,|/=| _| |==|   .=.     | |==|-  \|  |  
+|==| ,  | -|   \==\  \/ -/    |==| ,  | -|        \==\_ \   |==|- `-' _ | |==|_ : ;=:  - | |==| ,  | -|  
+|==| -   _ |    |==|  ,_/     |==| -   _ |        |==|- |   |==|  _     | |==| , '='     | |==| -   _ |  
+|==|  /\ , |    \==\-, /      |==|  /\ , |        |==|, |   |==|   .-. ,\  \==\ -    ,_ /  |==|  /\ , |  
+/==/, | |- |    /==/._/       /==/, | |- |        /==/ -/   /==/, //=/  |   '.='. -   .'   /==/, | |- |  
+`--`./  `--`    `--`-`        `--`./  `--`        `--`--`   `--`-' `-`--`     `--`--''     `--`./  `--`  
 
 
-							Copyright (C) 2018 Arves100. All Rights Reserved.
+					Copyright (C) 2018 Arves100. All Rights Reserved.
 
-										 Refreshed Windows XP Version
-									   *** Development Version: 0.1 ***
+								 Refreshed Windows XP Version
+							   *** Development Version: 0.1 ***
 
-											W H A T ' S   N E W
+									W H A T ' S   N E W
 
 Development Version 0.1:
 	[+] Switched to Visual Studio 2008
+	[+] Fixed POSIX deprecation warnings
+	[+] Added xf_getname (Get path of XFile handle)
+	[+] Added platform switch
+	[+] Added support for DirectX 6.1A DirectInput
+	[+] Added HANDLE parametra on MaxDevices costructor (still compatible with old MythOS API)
+	[+] Fixed several memory leaks in tests
+	[+] Updated Max API to support LONG Mouse position (break old Mouse Position and Movement set with short)
+	[-] Removed support for DirectX 6.0 DirectInput
+	[-] Removed Ivory global overload of new and delete
 
 END OF DOCUMENT
