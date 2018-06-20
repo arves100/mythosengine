@@ -133,6 +133,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\$(ProjectName)r.lib"
 			/>
 			<Tool
 				Name="VCALinkTool"

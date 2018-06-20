@@ -147,6 +147,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="Winmm.lib"
+				OutputFile="$(OutDir)\$(ProjectName)r.exe"
 				GenerateDebugInformation="true"
 				AssemblyDebug="2"
 				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"

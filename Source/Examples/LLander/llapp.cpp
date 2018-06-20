@@ -108,7 +108,7 @@ BOOL LanderApp::init_instance()
         {
             if (!ini.read("Device",buff))
             {
-                strlwr(buff);
+                _strlwr(buff);
 
                 startup &= ~(STARTUP_DDRAW
                              | STARTUP_D3D);
@@ -123,14 +123,14 @@ BOOL LanderApp::init_instance()
 
             if (!ini.read("FullScreen",buff))
             {
-                strlwr(buff);
+                _strlwr(buff);
                 if (strstr(buff,"no"))
                     startup &= ~STARTUP_FULLSCREEN;
             }
 
             if (!ini.read("Resolution",buff))
             {
-                strlwr(buff);
+                _strlwr(buff);
                 if (strstr(buff,"320x240x8"))
                 {
                     startup_width = 320;
@@ -172,7 +172,7 @@ BOOL LanderApp::init_instance()
         {
             if (!ini.read("DirectInput",buff))
             {
-                strlwr(buff);
+                _strlwr(buff);
                 if (strstr(buff,"yes"))
                     startup |= STARTUP_DX5;
             }

@@ -148,6 +148,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="dinput.lib dxguid.lib Winmm.lib ddraw.lib"
+				OutputFile="$(OutDir)\$(ProjectName)r.exe"
 				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				AssemblyDebug="2"

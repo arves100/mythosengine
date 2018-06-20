@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="BozoTest"
-	ProjectGUID="{EE7895FF-8E3C-43ED-9F8D-CE0D5924E45A}"
-	RootNamespace="BozoTest"
+	Name="LLander"
+	ProjectGUID="{45F9EC66-D2CC-449A-9C68-C08D07EE0B3A}"
+	RootNamespace="LLander"
 	TargetFrameworkVersion="196613"
 	>
 	<Platforms>
@@ -40,13 +40,11 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				SmallerTypeCheck="true"
 				RuntimeLibrary="3"
-				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
 				DebugInformationFormat="4"
 			/>
@@ -55,22 +53,24 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib dxguid.lib dplayx.lib dinput.lib dsound.lib ddraw.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.exe"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
-				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
 				GenerateMapFile="true"
 				MapFileName="$(TargetDir)$(TargetName).map"
 				MapExports="true"
+				SubSystem="2"
 				OptimizeReferences="1"
 				EnableCOMDATFolding="1"
-				OptimizeForWindows98="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -126,8 +126,7 @@
 				FavorSizeOrSpeed="2"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -139,22 +138,21 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib dxguid.lib dplayx.lib dinput.lib dsound.lib ddraw.lib"
 				OutputFile="$(OutDir)\$(ProjectName)r.exe"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				AssemblyDebug="2"
-				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
-				GenerateMapFile="false"
-				MapFileName=""
-				MapExports="false"
+				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				OptimizeForWindows98="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -181,7 +179,7 @@
 		</Configuration>
 		<Configuration
 			Name="Distribute|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="$(ProjectDir)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			CharacterSet="2"
@@ -210,8 +208,7 @@
 				FavorSizeOrSpeed="2"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -223,18 +220,20 @@
 			/>
 			<Tool
 				Name="VCResourceCompilerTool"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib dxguid.lib dplayx.lib dinput.lib dsound.lib ddraw.lib"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="false"
 				AssemblyDebug="2"
-				ProgramDatabaseFile=""
+				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				OptimizeForWindows98="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -262,12 +261,52 @@
 	</Configurations>
 	<References>
 		<ProjectReference
-			ReferencedProjectIdentifier="{25C60D69-DD02-4E59-85AF-C155A9B1E489}"
-			RelativePathToProject=".\Source\Bozo\Bozo.vcproj"
+			ReferencedProjectIdentifier="{647AD9FB-A25B-4675-9F9E-AEA10C81453E}"
+			RelativePathToProject=".\Source\SimGine\SimGine.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}"
+			RelativePathToProject=".\Source\Gutenbrg\Gutenbrg.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{5BB8BEE7-A6AE-4C8E-9762-2B81021925D3}"
+			RelativePathToProject=".\Source\Vangogh\Vangogh.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{6BFB5819-7D0D-4BC8-BF1F-24AB5FD72DBB}"
+			RelativePathToProject=".\Source\XFile\XFile.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{60224C89-C537-4BE1-B2C4-5AE188C4BA8C}"
+			RelativePathToProject=".\Source\Max\Max.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{8D3BA636-DFBE-438B-A9CB-D61274CBD80C}"
+			RelativePathToProject=".\Source\Turner\Turner.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{FE1446A3-3053-4FD7-B830-8338604FA72D}"
+			RelativePathToProject=".\Source\Chronos\Chronos.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{5521F7FC-2818-4275-9AD6-1448A8A6C716}"
+			RelativePathToProject=".\Source\Escher\Escher.vcproj"
 		/>
 		<ProjectReference
 			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
 			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{6653C888-6937-4BF1-8A9D-E667F3D9B63F}"
+			RelativePathToProject=".\Source\System\System.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{D375A15A-790B-45D5-86BC-CDD8BA267597}"
+			RelativePathToProject=".\Source\Bach\Bach.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{25C60D69-DD02-4E59-85AF-C155A9B1E489}"
+			RelativePathToProject=".\Source\Bozo\Bozo.vcproj"
 		/>
 	</References>
 	<Files>
@@ -277,7 +316,19 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\BZPP.CPP"
+				RelativePath=".\llapp.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\llend.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\llgame.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\lltitle.cpp"
 				>
 			</File>
 		</Filter>
@@ -286,6 +337,14 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\llander.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\llevt.hpp"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
@@ -293,7 +352,27 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath=".\charybds.ico"
+				RelativePath=".\CHARYBDS.ICO"
+				>
+			</File>
+			<File
+				RelativePath=".\llander.cif"
+				>
+			</File>
+			<File
+				RelativePath=".\llander.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\llander.ini"
+				>
+			</File>
+			<File
+				RelativePath=".\llevt.cel"
+				>
+			</File>
+			<File
+				RelativePath=".\llevt.iff"
 				>
 			</File>
 			<File
@@ -301,6 +380,10 @@
 				>
 			</File>
 		</Filter>
+		<File
+			RelativePath=".\README.TXT"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

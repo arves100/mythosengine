@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="BozoTest"
-	ProjectGUID="{EE7895FF-8E3C-43ED-9F8D-CE0D5924E45A}"
-	RootNamespace="BozoTest"
+	Name="Script"
+	ProjectGUID="{D53B69F7-2389-4F53-B387-901D9AA81594}"
+	RootNamespace="Script"
 	TargetFrameworkVersion="196613"
 	>
 	<Platforms>
@@ -40,13 +40,11 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				SmallerTypeCheck="true"
 				RuntimeLibrary="3"
-				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
 				DebugInformationFormat="4"
 			/>
@@ -61,16 +59,14 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib dinput.lib dxguid.lib ddraw.lib"
 				OutputFile="$(OutDir)\$(ProjectName)d.exe"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
-				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
 				GenerateMapFile="true"
 				MapFileName="$(TargetDir)$(TargetName).map"
 				MapExports="true"
-				OptimizeReferences="1"
-				EnableCOMDATFolding="1"
-				OptimizeForWindows98="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -126,8 +122,7 @@
 				FavorSizeOrSpeed="2"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -145,16 +140,13 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib dinput.lib dxguid.lib ddraw.lib"
 				OutputFile="$(OutDir)\$(ProjectName)r.exe"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="true"
 				AssemblyDebug="2"
-				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
-				GenerateMapFile="false"
-				MapFileName=""
-				MapExports="false"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				OptimizeForWindows98="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -181,7 +173,7 @@
 		</Configuration>
 		<Configuration
 			Name="Distribute|Win32"
-			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			OutputDirectory="$(ProjectDir)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="1"
 			CharacterSet="2"
@@ -210,8 +202,7 @@
 				FavorSizeOrSpeed="2"
 				OmitFramePointers="true"
 				EnableFiberSafeOptimizations="true"
-				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="&quot;$(SolutionDir)Inc&quot;"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)DX7SDK/include&quot;;&quot;$(SolutionDir)Inc&quot;"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -229,12 +220,12 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="Winmm.lib dinput.lib dxguid.lib ddraw.lib"
+				AdditionalLibraryDirectories="&quot;$(SolutionDir)DX7SDK/lib&quot;"
 				GenerateDebugInformation="false"
 				AssemblyDebug="2"
-				ProgramDatabaseFile=""
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
-				OptimizeForWindows98="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -262,12 +253,52 @@
 	</Configurations>
 	<References>
 		<ProjectReference
-			ReferencedProjectIdentifier="{25C60D69-DD02-4E59-85AF-C155A9B1E489}"
-			RelativePathToProject=".\Source\Bozo\Bozo.vcproj"
+			ReferencedProjectIdentifier="{6653C888-6937-4BF1-8A9D-E667F3D9B63F}"
+			RelativePathToProject=".\Source\System\System.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{5BB8BEE7-A6AE-4C8E-9762-2B81021925D3}"
+			RelativePathToProject=".\Source\Vangogh\Vangogh.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{60224C89-C537-4BE1-B2C4-5AE188C4BA8C}"
+			RelativePathToProject=".\Source\Max\Max.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{6BFB5819-7D0D-4BC8-BF1F-24AB5FD72DBB}"
+			RelativePathToProject=".\Source\XFile\XFile.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{5521F7FC-2818-4275-9AD6-1448A8A6C716}"
+			RelativePathToProject=".\Source\Escher\Escher.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{F0131C78-BCB9-4A6B-A295-5563EC1D4945}"
+			RelativePathToProject=".\Source\XFile\Util\yylib.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{FE1446A3-3053-4FD7-B830-8338604FA72D}"
+			RelativePathToProject=".\Source\Chronos\Chronos.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{4A1F0224-2D5C-4825-B07B-7395454ADF4E}"
+			RelativePathToProject=".\Source\Newton\Newton.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{7479EDBC-C102-46AF-83FA-12D7DF15BEBD}"
+			RelativePathToProject=".\Source\Felix\Felix.vcproj"
 		/>
 		<ProjectReference
 			ReferencedProjectIdentifier="{C0D918BA-4CC0-40EC-B155-2B86E5D5D720}"
 			RelativePathToProject=".\Source\Ivory\Ivory.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{25C60D69-DD02-4E59-85AF-C155A9B1E489}"
+			RelativePathToProject=".\Source\Bozo\Bozo.vcproj"
+		/>
+		<ProjectReference
+			ReferencedProjectIdentifier="{802CF11C-A1CA-4D3A-8188-2DF3F7FCDC9D}"
+			RelativePathToProject=".\Source\Gutenbrg\Gutenbrg.vcproj"
 		/>
 	</References>
 	<Files>
@@ -277,7 +308,23 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\BZPP.CPP"
+				RelativePath=".\main.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\scamera.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\script.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\sdraw.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\slight.cpp"
 				>
 			</File>
 		</Filter>
@@ -286,6 +333,18 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\scrapp.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\screvt.hpp"
+				>
+			</File>
+			<File
+				RelativePath=".\scrtok.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Resource Files"
@@ -293,11 +352,47 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath=".\charybds.ico"
+				RelativePath=".\cubes.csf"
+				>
+			</File>
+			<File
+				RelativePath=".\DEFAULT.PAL"
+				>
+			</File>
+			<File
+				RelativePath=".\export.csf"
+				>
+			</File>
+			<File
+				RelativePath=".\firewks.csf"
+				>
+			</File>
+			<File
+				RelativePath=".\README.TXT"
 				>
 			</File>
 			<File
 				RelativePath=".\RESOURCE.RC"
+				>
+			</File>
+			<File
+				RelativePath=".\screvt.cel"
+				>
+			</File>
+			<File
+				RelativePath=".\screvt.iff"
+				>
+			</File>
+			<File
+				RelativePath=".\script.ini"
+				>
+			</File>
+			<File
+				RelativePath=".\script.l"
+				>
+			</File>
+			<File
+				RelativePath=".\TEST.csf"
 				>
 			</File>
 		</Filter>

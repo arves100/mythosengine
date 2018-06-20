@@ -368,7 +368,7 @@ void Lander::process_events ()
         else if (evts.check (RIGHT))
             xacceleration = 10;
         else if (Devs->is_joystick_enabled()
-                 && abs (j.dwXpos - jcenterx) > 4096)
+                 && /*abs*/ (j.dwXpos - jcenterx) > 4096)
             xacceleration = float (long (j.dwXpos - jcenterx) / 2048);
         else
             xacceleration = 0;
@@ -844,6 +844,7 @@ void LanderGame::render()
     int waslocked=Screen->lock();
 
     char    buff[32];
+	int i = 0;
 
     assertMyth ("LunarLander::render needs Screen instance",
                 Screen != 0 && Screen->gvport != 0);
@@ -851,7 +852,7 @@ void LanderGame::render()
     ++frame;
 
     // Step all the landers
-    for (int i = 0; i < NUM_LANDERS; i++)
+    for (i = 0; i < NUM_LANDERS; i++)
     {
         if (aLanders[i])
             aLanders[i]->step();

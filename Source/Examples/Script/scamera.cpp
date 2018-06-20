@@ -693,7 +693,7 @@ STATIC void camera_body(EschCameraEx *cam)
                     || !xf_exist(yytext))
                     error("bitmap attribute needs valid filename");
 
-                strlwr(yytext);
+				_strlwr(yytext);
 
                 XFBitmap bm;
                 if (strstr(yytext,".bmp"))

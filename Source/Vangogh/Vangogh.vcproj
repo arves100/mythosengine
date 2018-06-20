@@ -144,6 +144,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				OutputFile="$(OutDir)\$(ProjectName)r.lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -472,13 +473,6 @@
 			<File
 				RelativePath=".\vngclip.asm"
 				>
-				<FileConfiguration
-					Name="Distribute|Win32"
-					>
-					<Tool
-						Name="MASM"
-					/>
-				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\VNGCOLOR.CPP"
@@ -526,13 +520,6 @@
 			<File
 				RelativePath=".\8BPP\vngitrn8.asm"
 				>
-				<FileConfiguration
-					Name="Distribute|Win32"
-					>
-					<Tool
-						Name="MASM"
-					/>
-				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\VNGITRNS.ASM"
@@ -591,13 +578,6 @@
 			<File
 				RelativePath=".\8BPP\vngpix8.asm"
 				>
-				<FileConfiguration
-					Name="Distribute|Win32"
-					>
-					<Tool
-						Name="MASM"
-					/>
-				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\NewTri\VNGPOLY.CPP"
@@ -618,13 +598,6 @@
 			<File
 				RelativePath=".\8BPP\vngrect8.asm"
 				>
-				<FileConfiguration
-					Name="Distribute|Win32"
-					>
-					<Tool
-						Name="MASM"
-					/>
-				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\8BPP\VNGSBLT8.CPP"
@@ -685,13 +658,6 @@
 			<File
 				RelativePath=".\vngzrect.asm"
 				>
-				<FileConfiguration
-					Name="Distribute|Win32"
-					>
-					<Tool
-						Name="MASM"
-					/>
-				</FileConfiguration>
 			</File>
 			<File
 				RelativePath=".\16BPP\ZGRTRI16.CPP"

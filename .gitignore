@@ -23,6 +23,8 @@
 *.exe
 +bin\*.exe
 WinRel/
+WinDbg/
+Distribute/
 *.map
 
 

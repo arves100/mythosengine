@@ -137,14 +137,14 @@ int APIENTRY WinMain (HINSTANCE hInstance,
             {
                 if (!ini.read("FullScreen",buff))
                 {
-                    strlwr(buff);
+                    _strlwr(buff);
                     if (strstr(buff,"yes"))
                         scrnflags |= VNGO_SET_RESOLUTION;
                 }
 
                 if (!ini.read("Device",buff))
                 {
-                    strlwr(buff);
+                    _strlwr(buff);
                     if (strstr(buff,"ddraw"))
                         scrndevice = SCREEN_DDRAW;
                     else if (strstr(buff,"d3d"))
@@ -155,7 +155,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
 
                 if (!ini.read("Resolution",buff))
                 {
-                    strlwr(buff);
+                    _strlwr(buff);
                     if (strstr(buff,"320x240x8"))
                     {
                         width = 320;
@@ -200,7 +200,7 @@ int APIENTRY WinMain (HINSTANCE hInstance,
             {
                 if (!ini.read("DirectInput",buff))
                 {
-                    strlwr(buff);
+                    _strlwr(buff);
                     if (strstr(buff,"yes"))
                         use_dinput = TRUE;
                 }
