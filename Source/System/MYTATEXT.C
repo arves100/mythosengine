@@ -95,6 +95,7 @@ static void mythos_atexit_handler(void)
         if (at->atexit_func)
             at->atexit_func();
         nxt = at->atexit_next;
+		free(at);
         at = nxt;
     }
 
@@ -140,10 +141,10 @@ void mythos_atexit_remove( register void ( *__func )( void ) )
 {
     AtExitType  *at;
 
-    for(at=AtExit; at != 0; at = at->atexit_next) {
+	for(at=AtExit; at != 0;at = at->atexit_next) {
         if (at->atexit_func == __func) {
             at->atexit_func = 0;
-            return;
+			return;
         }
     }
 
