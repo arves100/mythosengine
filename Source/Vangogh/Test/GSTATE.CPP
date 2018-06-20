@@ -103,6 +103,9 @@ GameState::GameState (MaxDevices *d):
     char        buff[128];
     char        palname[128];
 
+	gvp = NULL;
+	gvp2 = NULL;
+
     strcpy(palname,".\\default.pal");
 
     if (ini.open(".\\VT.INI",XF_OPEN_READ) == XF_ERR_NONE)
@@ -565,6 +568,14 @@ GameState::~GameState ()
         delete evt;
     }
 
+	if (gvp)
+		delete gvp;
+
+	if (gvp2)
+		delete gvp2;
+
+	if (mypal)
+		delete mypal;
 }
 
 
