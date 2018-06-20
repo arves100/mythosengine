@@ -1,0 +1,25 @@
+ .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
+/==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
+|==|, \/ /, / /==/- / /=/_ /  |==|, \/ /, / \==\.-.  - ,-./ |==|_ ||=|, |  /==/_,  ,  - \  |==|, \/ /, / 
+|==|-  \|  |  \==\, \/=/. /   |==|-  \|  |   `--`\==\- \    |==| ,|/=| _| |==|   .=.     | |==|-  \|  |  
+|==| ,  | -|   \==\  \/ -/    |==| ,  | -|        \==\_ \   |==|- `-' _ | |==|_ : ;=:  - | |==| ,  | -|  
+|==| -   _ |    |==|  ,_/     |==| -   _ |        |==|- |   |==|  _     | |==| , '='     | |==| -   _ |  
+|==|  /\ , |    \==\-, /      |==|  /\ , |        |==|, |   |==|   .-. ,\  \==\ -    ,_ /  |==|  /\ , |  
+/==/, | |- |    /==/._/       /==/, | |- |        /==/ -/   /==/, //=/  |   '.='. -   .'   /==/, | |- |  
+`--`./  `--`    `--`-`        `--`./  `--`        `--`--`   `--`-' `-`--`     `--`--''     `--`./  `--`  
+
+
+					Copyright (C) 2018 Arves100. All Rights Reserved.
+
+						U P D A T I N G   F R O M    M Y T H O S 9 5
+	
+										Max
+### MaxMouse get_pos, get_movement, set_pos now takes LONG rather then short
+### MaxDevice initialization could now take HINSTANCE parametra, if no HINSTANCE is
+	defined the library will take, if possible, the HINSTANCE from HWND.
+	However, this is not possible with Console application, MAKE SURE to add GetModuleHandle(0)
+	as second parametra for any application that dosen't have a primary Win32 window.
+	
+										WINAPI
+###	HWND_DESKTOP is no longer supported, please switch to GetConsoleWindow()
+
