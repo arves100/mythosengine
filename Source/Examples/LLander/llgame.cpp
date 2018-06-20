@@ -710,7 +710,7 @@ void LanderGame::activate()
         {
             if (!ini.read("Multiplayer",buff))
             {
-                strlwr(buff);
+                _strlwr(buff);
                 if (strstr(buff,"yes") || strstr(buff,"on"))
                 {
                     Net = new LanderNetwork (NUM_LANDERS);
