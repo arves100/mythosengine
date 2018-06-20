@@ -84,7 +84,8 @@ void main ()
     IvorySystem ivory (1024*1024);
 
     // Create a user event system and initialize it.
-    MaxDevicesDirectX devs (HWND_DESKTOP);
+//    MaxDevicesDirectX devs ((HMODULE)GetWindowLong (HWND_DESKTOP, GWL_HINSTANCE), HWND_DESKTOP);
+	MaxDevicesDirectX devs(GetConsoleWindow(), GetModuleHandle(0));
     MaxEventUser evt (devs, "maxtest.iff", "maxtest");
 
     cout << "Collect interesting events" << endl;
@@ -134,7 +135,7 @@ void main ()
 
         if (active.check (mmove))
         {
-            short x, y, dx, dy;
+            LONG x, y, dx, dy;
 
             evt.get_mouse_pos (&x, &y);
             evt.get_mouse_movement (&dx, &dy);
