@@ -73,6 +73,7 @@ extern MaxDevices *Devs;
 GameState::GameState (MaxDevices *d):
     devs (d), evt (0), active (FALSE), page(0)
 {
+	gvp = NULL;
     bmi = (LPBITMAPINFO)ivory_alloc (sizeof (BITMAPINFOHEADER) + COLORS*sizeof (RGBQUAD));
     if (bmi)
     {
@@ -125,6 +126,18 @@ GameState::~GameState ()
         evt->uninstall();
         delete evt;
     }
+
+	if (gvp)
+		delete gvp;
+
+	if (mypal)
+		delete mypal;
+
+	if (gmap)
+		delete gmap;
+
+	if (bmi)
+		ivory_free((void**)&bmi);
 }
 
 
@@ -258,7 +271,9 @@ void GameState::Render()
     VngoColor24bit c1(0,0,255);
     VngoColor24bit c2(0,255,0);
 
+	gvp->lock();
     gvp->reset();
+	gvp->unlock();
 
     switch (page)
     {
