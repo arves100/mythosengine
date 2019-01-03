@@ -1,4 +1,12 @@
- .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
+Last effort I made for update and build with very old game engine.
+The updated version was going to be named Nynthon Engine and was originaly supposed to work with SEGA Dreamcast hardware using Windows CE Toolkit.
+
+MythOS game engine is using a lot of exclusive DirectX 6.1A SDK functionality.
+The license of this project will be Apache 2.0 (Hoping it won't break MIT license)
+
+The last commit was made around 2018.
+-----------------------------------------------------------------------------------------------------------------------
+.-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
 /==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
 |==|, \/ /, / /==/- / /=/_ /  |==|, \/ /, / \==\.-.  - ,-./ |==|_ ||=|, |  /==/_,  ,  - \  |==|, \/ /, / 
 |==|-  \|  |  \==\, \/=/. /   |==|-  \|  |   `--`\==\- \    |==| ,|/=| _| |==|   .=.     | |==|-  \|  |  
@@ -10,7 +18,7 @@
 
 
 								MythOS Rebirth/Nynthon Engine
-					Copyright (C) 2018 Arves100. All Rights Reserved.
+					
 
 								 Refreshed Windows Version
 							   *** Development Version: 0.1 ***
@@ -364,7 +372,7 @@
  ---------------------------------------------------------------------------
  FUTURE RELEASES
 
-    Nynthon Engine is currently work in progress, there are sever features planned
+    Nynthon Engine is currently work in progress, there are several features planned
 	that will break the old compatibility with MythOS95.
 	
 	Planned features:
