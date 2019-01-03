@@ -6,7 +6,7 @@ The license of this project will be Apache 2.0 (Hoping it won't break MIT licens
 
 The last commit was made around 2018.
 
-There isn't much done, the project was converted into Visual Studio 2018 and DirectX SDK 6.1A.
+There isn't much done, the project was converted into Visual Studio 2008 and DirectX SDK 6.1A. (The SDK I am using is DirectX SDK 7)
 All the executables could be builded correctly, but there are some issues.
 
 -----------------------------------------------------------------------------------------------------------------------
