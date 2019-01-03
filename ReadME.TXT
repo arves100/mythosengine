@@ -1,10 +1,14 @@
-Last effort I made for update and build with very old game engine.
+Last effort I made for update and build with very old game engine. (This changes were made months ago in a private GitLab repository)
 The updated version was going to be named Nynthon Engine and was originaly supposed to work with SEGA Dreamcast hardware using Windows CE Toolkit.
 
 MythOS game engine is using a lot of exclusive DirectX 6.1A SDK functionality.
 The license of this project will be Apache 2.0 (Hoping it won't break MIT license)
 
 The last commit was made around 2018.
+
+There isn't much done, the project was converted into Visual Studio 2018 and DirectX SDK 6.1A.
+All the executables could be builded correctly, but there are some issues.
+
 -----------------------------------------------------------------------------------------------------------------------
 .-._                          .-._          ,--.--------.   ,--.-,,-,--,     _,.---._      .-._         
 /==/ \  .-._   ,--.-.  .-,--. /==/ \  .-._  /==/,  -   , -\ /==/  /|=|  |   ,-.' , -  `.   /==/ \  .-._  
